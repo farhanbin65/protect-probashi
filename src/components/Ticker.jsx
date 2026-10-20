@@ -6,7 +6,6 @@ import {
 } from "react";
 
 import { Link } from "react-router-dom";
-import { Pause, Play } from "lucide-react";
 
 import { useT } from "../hooks/useT";
 import { useCountry } from "../hooks/useCountry";
@@ -22,9 +21,6 @@ export default function Ticker() {
   const { countryCode } = useCountry();
 
   const groupRef = useRef(null);
-
-  const [manualPaused, setManualPaused] =
-    useState(false);
 
   const [holding, setHolding] =
     useState(false);
@@ -82,7 +78,7 @@ export default function Ticker() {
     return null;
   }
 
-  const paused = manualPaused || holding || hidden;
+  const paused = holding || hidden;
 
   function renderHeadlines(accessible = false) {
     return items.map((item) => (
@@ -161,25 +157,7 @@ export default function Ticker() {
         ))}
       </ul>
 
-      <button
-        type="button"
-        className="ticker-control"
-        onClick={() => setManualPaused((value) => !value)}
-        aria-pressed={manualPaused}
-        aria-label={
-          manualPaused ? t("play") : t("pause")
-        }
-      >
-        {manualPaused ? (
-          <Play size={20} aria-hidden="true" />
-        ) : (
-          <Pause size={20} aria-hidden="true" />
-        )}
 
-        <span className="ticker-control__text">
-          {manualPaused ? t("play") : t("pause")}
-        </span>
-      </button>
     </section>
   );
 }

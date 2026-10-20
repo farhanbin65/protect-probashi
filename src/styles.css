@@ -1258,3 +1258,12 @@ button.language-switcher {
 .news-image figcaption {
   margin-top: 6px;
 }
+
+.currency-controls { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; margin-block: 16px; }
+.currency-controls label { display: grid; gap: 6px; flex: 1 1 160px; min-width: 0; }
+.currency-controls input, .currency-controls select { width: 100%; min-height: 48px; border: 1px solid var(--border); border-radius: 8px; padding: 10px; background: var(--surface); color: var(--text); }
+.currency-controls output { font-size: 24px; font-weight: 700; padding: 8px 0; overflow-wrap: anywhere; }
+.currency-controls output small { font-size: 14px; }
+.currency-quick { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; }
+.currency-quick button { display: grid; gap: 4px; padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); cursor: pointer; }
+.currency-quick button[aria-pressed="true"] { border-color: var(--primary); background: #e9f4ed; }

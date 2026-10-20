@@ -27,6 +27,7 @@ import {
 
 import BigButton from "../components/BigButton";
 import Card from "../components/Card";
+import CurrencyRates from "../components/CurrencyRates";
 
 export default function Home() {
   const t = useT();
@@ -266,6 +267,8 @@ export default function Home() {
           )}
         </section>
       </div>
+
+      <CurrencyRates />
 
       <Link
         to="/about"
