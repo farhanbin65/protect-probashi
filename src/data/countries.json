@@ -1,0 +1,134 @@
+[
+  {
+    "code": "SA",
+    "name": {
+      "bn": "সৌদি আরব",
+      "en": "Saudi Arabia"
+    },
+    "emergency": {
+      "police": "999",
+      "ambulance": "997",
+      "fire": "998"
+    },
+    "emergencyLastVerified": "2026-10-19",
+    "emergencySourceUrl": "https://my.gov.sa/en/emergency-contact",
+    "cities": [
+      {
+        "id": "riyadh",
+        "name": {
+          "bn": "রিয়াদ",
+          "en": "Riyadh"
+        }
+      },
+      {
+        "id": "jeddah",
+        "name": {
+          "bn": "জেদ্দা",
+          "en": "Jeddah"
+        }
+      },
+      {
+        "id": "makkah",
+        "name": {
+          "bn": "মক্কা",
+          "en": "Makkah"
+        }
+      },
+      {
+        "id": "madinah",
+        "name": {
+          "bn": "মদিনা",
+          "en": "Madinah"
+        }
+      },
+      {
+        "id": "dammam",
+        "name": {
+          "bn": "দাম্মাম",
+          "en": "Dammam"
+        }
+      }
+    ]
+  },
+  {
+    "code": "AE",
+    "name": {
+      "bn": "সংযুক্ত আরব আমিরাত",
+      "en": "United Arab Emirates"
+    },
+    "emergency": {
+      "police": "999",
+      "ambulance": "998",
+      "fire": "997"
+    },
+    "emergencyLastVerified": "2026-10-19",
+    "emergencySourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+    "cities": [
+      {
+        "id": "abu-dhabi",
+        "name": {
+          "bn": "আবুধাবি",
+          "en": "Abu Dhabi"
+        }
+      },
+      {
+        "id": "dubai",
+        "name": {
+          "bn": "দুবাই",
+          "en": "Dubai"
+        }
+      },
+      {
+        "id": "sharjah",
+        "name": {
+          "bn": "শারজাহ",
+          "en": "Sharjah"
+        }
+      },
+      {
+        "id": "ajman",
+        "name": {
+          "bn": "আজমান",
+          "en": "Ajman"
+        }
+      }
+    ]
+  },
+  {
+    "code": "QA",
+    "name": {
+      "bn": "কাতার",
+      "en": "Qatar"
+    },
+    "emergency": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    },
+    "emergencyLastVerified": "2026-10-19",
+    "emergencySourceUrl": "https://portal.moi.gov.qa/UNCCPCJDoha/English/Emergency_Services.html",
+    "cities": [
+      {
+        "id": "doha",
+        "name": {
+          "bn": "দোহা",
+          "en": "Doha"
+        }
+      },
+      {
+        "id": "al-rayyan",
+        "name": {
+          "bn": "আল রাইয়ান",
+          "en": "Al Rayyan"
+        }
+      },
+      {
+        "id": "al-wakrah",
+        "name": {
+          "bn": "আল ওয়াকরাহ",
+          "en": "Al Wakrah"
+        }
+      }
+    ]
+  }
+]

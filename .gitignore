@@ -1,0 +1,38 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.tsbuildinfo
+
+# Python environment and caches used by the data fetcher
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environment variables (keep shareable examples)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+
+# Vercel local project settings
+.vercel/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

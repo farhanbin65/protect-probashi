@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sample-sa-alert",
+    "status": "published",
+    "title": {
+      "bn": "নমুনা সতর্কতা — এটি প্রকৃত জরুরি সংবাদ নয়",
+      "en": "SAMPLE ALERT — This is not a real emergency"
+    },
+    "summary": {
+      "bn": "এটি নিউজ টিকার পরীক্ষা করার জন্য তৈরি নমুনা তথ্য। প্রকৃত সতর্কতা নয়।",
+      "en": "Demonstration content for testing the news ticker. This is not a real alert."
+    },
+    "countryCodes": ["SA"],
+    "urgent": true,
+    "sourceName": "SAMPLE DATA - VERIFY BEFORE PUBLISHING",
+    "sourceUrl": "",
+    "publishedAt": "2026-01-01",
+    "expiresAt": null
+  },
+  {
+    "id": "sample-global-news",
+    "status": "published",
+    "title": {
+      "bn": "নমুনা সংবাদ — প্রবাসীদের জন্য তথ্যসেবা",
+      "en": "SAMPLE NEWS — Information services for expatriates"
+    },
+    "summary": {
+      "bn": "এখানে যাচাই করা সরকারি ঘোষণা ও প্রবাসীদের গুরুত্বপূর্ণ সংবাদ প্রকাশ করা হবে।",
+      "en": "Verified government announcements and important expatriate news will appear here."
+    },
+    "countryCodes": [],
+    "urgent": false,
+    "sourceName": "SAMPLE DATA - VERIFY BEFORE PUBLISHING",
+    "sourceUrl": "",
+    "publishedAt": "2026-01-01",
+    "expiresAt": null
+  },
+  {
+    "id": "sample-uae-news",
+    "status": "published",
+    "title": {
+      "bn": "নমুনা সংবাদ — সংযুক্ত আরব আমিরাত",
+      "en": "SAMPLE NEWS — United Arab Emirates"
+    },
+    "summary": {
+      "bn": "এটি সংযুক্ত আরব আমিরাতের সংবাদ ফিল্টার পরীক্ষা করার নমুনা।",
+      "en": "This example tests country-specific news filtering."
+    },
+    "countryCodes": ["AE"],
+    "urgent": false,
+    "sourceName": "SAMPLE DATA - VERIFY BEFORE PUBLISHING",
+    "sourceUrl": "",
+    "publishedAt": "2026-01-01",
+    "expiresAt": null
+  }
+]

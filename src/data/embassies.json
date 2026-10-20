@@ -1,0 +1,101 @@
+[
+  {
+    "id": "bd-sa-riyadh",
+    "countryCode": "SA",
+    "type": "embassy",
+    "name": {
+      "bn": "বাংলাদেশ দূতাবাস, রিয়াদ",
+      "en": "Bangladesh Embassy, Riyadh"
+    },
+    "city": "riyadh",
+    "phone": "0114195300",
+    "phoneNote": {
+      "bn": "সৌদি আরবের ভেতর থেকে কল করার নম্বর",
+      "en": "Local Saudi Arabia telephone number"
+    },
+    "hotline": null,
+    "email": "mission.riyadh@mofa.gov.bd",
+    "address": "8039 Dareen Street, Diplomatic Quarter, Riyadh, Saudi Arabia",
+    "website": "https://www.bangladeshembassy.org.sa/",
+    "sourceUrl": "https://www.bangladeshembassy.org.sa/contact.html",
+    "lastVerified": "2026-10-19"
+  },
+  {
+    "id": "bd-sa-jeddah",
+    "countryCode": "SA",
+    "type": "consulate",
+    "name": {
+      "bn": "বাংলাদেশ কনস্যুলেট জেনারেল, জেদ্দা",
+      "en": "Bangladesh Consulate General, Jeddah"
+    },
+    "city": "jeddah",
+    "phone": "+966508636943",
+    "phoneNote": {
+      "bn": "সরকারি তালিকায় প্রকাশিত কনস্যুলার কর্মকর্তার যোগাযোগ নম্বর",
+      "en": "Consular officer contact published in the official directory"
+    },
+    "hotline": null,
+    "email": "consular.jeddah@mofa.gov.bd",
+    "address": "",
+    "website": "https://jeddah.mofa.gov.bd/",
+    "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+    "lastVerified": "2026-10-19"
+  },
+  {
+    "id": "bd-ae-abu-dhabi",
+    "countryCode": "AE",
+    "type": "embassy",
+    "name": {
+      "bn": "বাংলাদেশ দূতাবাস, আবুধাবি",
+      "en": "Bangladesh Embassy, Abu Dhabi"
+    },
+    "city": "abu-dhabi",
+    "phone": "+97124465100",
+    "phoneNote": null,
+    "hotline": null,
+    "email": "mission.abudhabi@mofa.gov.bd",
+    "address": "Villa 46 and 48, Sector 19, Zone W31, Al Jawwalah Street, Al Saadah Area, Abu Dhabi, UAE",
+    "website": "https://abudhabi.mofa.gov.bd/",
+    "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/contact-us-951808-6952668235ce18e1c05a9ab3",
+    "lastVerified": "2026-10-19"
+  },
+  {
+    "id": "bd-ae-dubai",
+    "countryCode": "AE",
+    "type": "consulate",
+    "name": {
+      "bn": "বাংলাদেশ কনস্যুলেট জেনারেল, দুবাই",
+      "en": "Bangladesh Consulate General, Dubai"
+    },
+    "city": "dubai",
+    "phone": "+97142388199",
+    "phoneNote": {
+      "bn": "সাধারণ জিজ্ঞাসার জন্য অভ্যর্থনা নম্বর",
+      "en": "Reception number for general enquiries"
+    },
+    "hotline": null,
+    "email": "mission.dubai@mofa.gov.bd",
+    "address": "Villa 36 and 145, Abu Hail Road, Al Wuheida, Deira, Dubai, UAE",
+    "website": "https://dubai.mofa.gov.bd/",
+    "sourceUrl": "https://dubai.mofa.gov.bd/pages/static-pages/6952669935ce18e1c05aa471",
+    "lastVerified": "2026-10-19"
+  },
+  {
+    "id": "bd-qa-doha",
+    "countryCode": "QA",
+    "type": "embassy",
+    "name": {
+      "bn": "বাংলাদেশ দূতাবাস, দোহা",
+      "en": "Bangladesh Embassy, Doha"
+    },
+    "city": "doha",
+    "phone": "+97444671927",
+    "phoneNote": null,
+    "hotline": "+97433662000",
+    "email": "mission.doha@mofa.gov.bd",
+    "address": "Building 153, Street 820, Zone 43, New Al-Hilal, Doha, Qatar",
+    "website": "https://doha.mofa.gov.bd/",
+    "sourceUrl": "https://doha.mofa.gov.bd/pages/static-pages/6952669135ce18e1c05aa177",
+    "lastVerified": "2026-10-19"
+  }
+]

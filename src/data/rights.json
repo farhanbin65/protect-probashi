@@ -1,0 +1,72 @@
+[
+  {
+    "id": "detention",
+    "countryCode": "global",
+    "title": {
+      "bn": "আটক হলে কী করবেন",
+      "en": "If you are detained"
+    },
+    "steps": {
+      "bn": [
+        "নমুনা নির্দেশনা। এই তথ্য এখনো আইনগতভাবে যাচাই করা হয়নি।",
+        "প্রকাশের আগে সংশ্লিষ্ট দেশের আইন এবং সঠিক সহায়তার পদ্ধতি যাচাই করতে হবে।"
+      ],
+      "en": [
+        "SAMPLE GUIDANCE. This information has not been legally reviewed.",
+        "Verify local laws and assistance procedures before publishing."
+      ]
+    },
+    "helpContacts": [
+      "embassy",
+      "emergency"
+    ],
+    "audioUrl": null,
+    "lastReviewed": null
+  },
+  {
+    "id": "employment",
+    "countryCode": "global",
+    "title": {
+      "bn": "কর্মস্থলে সমস্যায় পড়লে",
+      "en": "Problems at work"
+    },
+    "steps": {
+      "bn": [
+        "নমুনা নির্দেশনা। দেশের শ্রম আইন অনুযায়ী তথ্য যাচাই করতে হবে।",
+        "পেশাদার পরামর্শ ছাড়া এই তথ্যকে আইনি নির্দেশনা হিসেবে ব্যবহার করবেন না।"
+      ],
+      "en": [
+        "SAMPLE GUIDANCE. This content needs review against local employment laws.",
+        "Do not treat this example as professional legal advice."
+      ]
+    },
+    "helpContacts": [
+      "embassy"
+    ],
+    "audioUrl": null,
+    "lastReviewed": null
+  },
+  {
+    "id": "sa-residency",
+    "countryCode": "SA",
+    "title": {
+      "bn": "সৌদি আরবে বসবাসের কাগজপত্র",
+      "en": "Residency documents in Saudi Arabia"
+    },
+    "steps": {
+      "bn": [
+        "নমুনা তথ্য। বর্তমান সরকারি নিয়ম যাচাই করা হয়নি।",
+        "সৌদি কর্তৃপক্ষ ও বাংলাদেশ দূতাবাসের সরকারি তথ্য দিয়ে এই অংশ তৈরি করতে হবে।"
+      ],
+      "en": [
+        "SAMPLE CONTENT. Current government requirements have not been verified.",
+        "Replace this with reviewed information from the relevant official authorities."
+      ]
+    },
+    "helpContacts": [
+      "embassy"
+    ],
+    "audioUrl": null,
+    "lastReviewed": null
+  }
+]

@@ -1,0 +1,701 @@
+/* ==========================================
+   PROTECT PROBASHI — RESPONSIVE LAYOUT
+   Version 1.1
+========================================== */
+
+:root {
+  --content-width: 1360px;
+  --desktop-gap: 24px;
+}
+
+/* Keep every page inside the viewport */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 0;
+}
+
+.main-content {
+  width: 100%;
+  max-width: var(--content-width);
+  min-width: 0;
+}
+
+.page {
+  width: 100%;
+  min-width: 0;
+}
+
+.panel {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.word-break {
+  overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   DESKTOP HEADER
+========================================== */
+
+.header-inner {
+  max-width: var(--content-width);
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 56px;
+
+  padding: 10px 14px;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.desktop-nav__link:hover {
+  color: var(--primary);
+  background: var(--primary-tint);
+  text-decoration: none;
+}
+
+.desktop-nav__link.is-active {
+  color: var(--primary);
+  background: var(--primary-tint);
+  border-color: var(--border);
+}
+
+/* ==========================================
+   DASHBOARD — MOBILE FIRST
+========================================== */
+
+.dashboard-welcome {
+  margin-block-end: 24px;
+}
+
+.dashboard-welcome h1 {
+  color: var(--primary);
+  margin-block-end: 8px;
+}
+
+.dashboard-welcome p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.home-dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+
+.dashboard-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-block-end: 18px;
+
+  color: var(--primary);
+}
+
+.dashboard-section-heading h2 {
+  margin: 0;
+  color: var(--text);
+}
+
+.dashboard-location {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.dashboard-location__value {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding-block: 6px 14px;
+}
+
+.dashboard-location__value strong {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-emergency {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  background: var(--surface);
+}
+
+.dashboard-emergency .dashboard-section-heading {
+  color: var(--primary);
+}
+
+.dashboard-emergency p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.dashboard-emergency .home-emergency {
+  width: 100%;
+  min-height: 76px;
+}
+
+.dashboard-services {
+  min-width: 0;
+}
+
+.home-services {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.home-services .feature-card {
+  min-width: 0;
+}
+
+.home-services .feature-card__body {
+  min-width: 0;
+}
+
+.dashboard-updates {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.dashboard-news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-block: 16px;
+
+  border-block-bottom: 1px solid var(--border);
+
+  color: var(--text);
+}
+
+.dashboard-news-item:first-child {
+  padding-block-start: 0;
+}
+
+.dashboard-news-item:last-child {
+  border-block-bottom: 0;
+}
+
+.dashboard-news-item:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.dashboard-news-item strong {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-news-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.dashboard-view-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  min-height: 56px;
+
+  margin-block-start: auto;
+  padding-block-start: 16px;
+
+  border-block-start: 1px solid var(--border);
+
+  font-weight: 700;
+}
+
+.dashboard-offline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.dashboard-offline p {
+  color: var(--text-muted);
+}
+
+.dashboard-offline .status-text {
+  color: var(--primary);
+}
+
+.dashboard-about {
+  margin-block-start: 22px;
+}
+
+/* ==========================================
+   EMERGENCY PAGE
+========================================== */
+
+.emergency-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.emergency-grid .emergency-panel {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  height: 100%;
+}
+
+.emergency-grid .phone-action {
+  margin-block: 18px 0;
+}
+
+.emergency-grid .metadata {
+  margin-block-start: auto;
+  padding-block-start: 18px;
+}
+
+.emergency-mission-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.emergency-mission-card h3 {
+  margin: 0;
+}
+
+.emergency-mission-card .detail-block {
+  padding-block-start: 14px;
+}
+
+.emergency-mission-card .metadata {
+  margin-block-end: 0;
+}
+
+.official-source {
+  margin-block-start: 16px;
+}
+
+/* ==========================================
+   EMBASSY PAGE
+========================================== */
+
+.embassy-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  gap: 18px;
+}
+
+.embassy-grid .embassy-record {
+  height: 100%;
+  min-width: 0;
+}
+
+.embassy-record__footer {
+  margin-block-start: auto;
+  padding-block-start: 16px;
+
+  border-block-start: 1px solid var(--border);
+}
+
+.embassy-record__footer .metadata {
+  margin-block-end: 10px;
+}
+
+.page-intro {
+  max-width: 850px;
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   OTHER PAGES
+========================================== */
+
+.news-filters {
+  flex-wrap: wrap;
+}
+
+.news-card {
+  min-width: 0;
+}
+
+.rights-steps {
+  max-width: 900px;
+}
+
+/* ==========================================
+   TABLET — 700px+
+========================================== */
+
+@media (min-width: 700px) {
+  .main-content {
+    padding-inline: 28px;
+  }
+
+  .page {
+    padding-block: 34px 60px;
+  }
+
+  .header-inner {
+    padding-inline: 28px;
+  }
+
+  .dashboard-welcome {
+    margin-block-end: 30px;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 2.25rem;
+  }
+
+  .panel {
+    padding: 24px;
+  }
+
+  .home-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .embassy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .emergency-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Rights page */
+
+  .page > .feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* News list */
+
+  .news-filters + .stack {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 18px;
+  }
+
+  .news-card {
+    height: 100%;
+  }
+
+  .site-footer {
+    max-width: var(--content-width);
+    padding-inline: 28px;
+  }
+}
+
+/* ==========================================
+   LAPTOP — 1000px+
+========================================== */
+
+@media (min-width: 1000px) {
+  .main-content {
+    padding-inline: 32px;
+  }
+
+  .page {
+    padding-block: 40px 70px;
+  }
+
+  .home-dashboard {
+    grid-template-columns:
+      minmax(0, 1.9fr)
+      minmax(290px, 0.9fr);
+
+    grid-template-areas:
+      "emergency location"
+      "services updates"
+      "offline updates";
+
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .dashboard-location {
+    grid-area: location;
+  }
+
+  .dashboard-emergency {
+    grid-area: emergency;
+
+    min-height: 240px;
+    padding: 28px;
+  }
+
+  .dashboard-services {
+    grid-area: services;
+  }
+
+  .dashboard-updates {
+    grid-area: updates;
+  }
+
+  .dashboard-offline {
+    grid-area: offline;
+  }
+
+  .dashboard-emergency {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .dashboard-emergency__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .dashboard-emergency .home-emergency {
+    width: min(100%, 300px);
+    min-height: 90px;
+  }
+
+  .dashboard-location__value {
+    margin-block-end: auto;
+  }
+
+  .dashboard-location {
+    min-height: 240px;
+  }
+
+  .dashboard-updates {
+    min-height: 320px;
+  }
+
+  .dashboard-offline {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .dashboard-offline > div {
+    flex: 1;
+    min-width: 230px;
+  }
+
+  .dashboard-offline .big-button {
+    width: auto;
+    min-width: 230px;
+  }
+
+  .home-services {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .home-services .feature-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-height: 210px;
+    gap: 16px;
+  }
+
+  .home-services .feature-card__body {
+    width: 100%;
+  }
+
+  .home-services .feature-card .direction-icon {
+    align-self: flex-end;
+    margin-block-start: auto;
+  }
+
+  .emergency-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .embassy-grid {
+    gap: 22px;
+  }
+
+  .emergency-mission-card {
+    min-height: 280px;
+  }
+
+  .news-filters + .stack {
+    gap: 22px;
+  }
+}
+
+/* ==========================================
+   DESKTOP NAVIGATION — 1220px+
+========================================== */
+
+@media (min-width: 1220px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns:
+      minmax(200px, 1fr)
+      auto
+      minmax(110px, 1fr);
+
+    align-items: center;
+    gap: 20px;
+
+    min-height: 88px;
+  }
+
+  .brand {
+    justify-self: start;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    min-width: 0;
+  }
+
+  .language-switcher {
+    justify-self: end;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 2.6rem;
+  }
+
+  .dashboard-welcome p {
+    font-size: 1.1rem;
+  }
+}
+
+/* ==========================================
+   LARGE DESKTOP — 1500px+
+========================================== */
+
+@media (min-width: 1500px) {
+  :root {
+    --content-width: 1440px;
+  }
+
+  .main-content {
+    padding-inline: 40px;
+  }
+
+  .home-dashboard {
+    grid-template-columns:
+      minmax(0, 2fr)
+      minmax(320px, 0.85fr);
+
+    gap: 28px;
+  }
+
+  .home-services {
+    gap: 20px;
+  }
+
+  .home-services .feature-card {
+    min-height: 225px;
+  }
+
+  .dashboard-emergency {
+    min-height: 260px;
+  }
+}
+
+/* ==========================================
+   SMALL SCREEN SAFETY
+========================================== */
+
+@media (max-width: 699px) {
+  .home-dashboard {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dashboard-location,
+  .dashboard-emergency,
+  .dashboard-services,
+  .dashboard-updates,
+  .dashboard-offline {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .dashboard-location {
+    padding: 16px;
+  }
+
+  .dashboard-emergency {
+    padding: 18px;
+  }
+
+  .home-services {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dashboard-updates {
+    padding: 18px;
+  }
+
+  .dashboard-offline {
+    padding: 18px;
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-news-item,
+  .desktop-nav__link,
+  .feature-card {
+    transition: none;
+  }
+}
