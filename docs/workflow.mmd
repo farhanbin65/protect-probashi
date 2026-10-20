@@ -1,0 +1,76 @@
+flowchart TD
+    Visitor["Worker opens Protect Probashi"] --> Hosting["Vercel serves the Vite production build"]
+    Hosting --> Router["React BrowserRouter"]
+    Router --> Language["LanguageProvider: Bangla or English"]
+    Router --> Location["CountryProvider: saved country and current city"]
+    Language --> Shell["Bilingual header, navigation and news ticker"]
+    Location --> Shell
+    Shell --> Home["Home: location, emergency help, services, news and currency"]
+    Home --> Search["Location: search country or city in Bangla or English"]
+    Search --> Confirm["Select result or use country and city selectors"]
+    Confirm --> Save["Confirm: save country on device and set current city"]
+    Save --> Location
+    Save --> Home
+    Home --> Emergency["Emergency: selected country's services and verified embassy contacts"]
+    Home --> Embassy["Embassy: all offices with country filter and local offices first"]
+    Home --> Rights["Rights: global and selected-country guidance"]
+    Rights --> RightsDetail["Guidance detail and links to help"]
+    Home --> News["News: all, my country or worldwide"]
+    Shell --> NewsDetail["News detail: bilingual summary, image, date and source"]
+    News --> NewsDetail
+    NewsDetail --> Publisher["Read original report on publisher website"]
+    Shell --> About["About: purpose, limitations, privacy and reporting status"]
+
+    subgraph Content["Content maintenance and local data"]
+        Editors["Maintainer checks sources and edits JSON"] --> Verified["embassies.json: five verified contact records"]
+        Editors --> Imported["bd_missions.json: imported mission directory"]
+        Editors --> CountryData["countries.json: verified country and emergency data"]
+        CountryData --> Countries["directoryCountries: merge countries and mission cities"]
+        Imported --> Countries
+        Countries --> Search
+        Countries --> Location
+        Verified --> Merge["Normalize missions and deduplicate; verified records take precedence"]
+        Imported --> Merge
+        Countries --> Merge
+        Merge --> Embassy
+        Verified --> Emergency
+        CountryData --> Emergency
+        Editors --> RightsData["rights.json: guidance; currently sample content"]
+        RightsData --> Rights
+        RightsData --> RightsDetail
+        Editors --> NewsData["news.json: manually curated reports with attribution"]
+        NewsData --> Published["Exclude drafts, future posts and expired stories; sort newest first"]
+        Published --> News
+        Published --> NewsDetail
+        Published --> Home
+        Published --> Shell
+    end
+
+    subgraph Currency["Currency to BDT"]
+        Home --> LoadRates["Load daily exchange rates"]
+        LoadRates --> Fresh{"Valid cache before next update?"}
+        Fresh -->|Yes| Convert["Choose currency and amount; divide by BDT-base rate"]
+        Fresh -->|No| API["ExchangeRate-API HTTPS request with timeout"]
+        API -->|Success| Cache["Validate response and save rates locally"]
+        Cache --> Convert
+        API -->|Failure with cache| Stale["Show saved rates with stale warning"]
+        Stale --> Convert
+        API -->|Failure without cache| Retry["Show error and retry button"]
+        Retry --> LoadRates
+        Convert --> RateDisplay["Display BDT result, provider link and Bangladesh-time update stamp"]
+    end
+
+    subgraph Offline["Offline behavior"]
+        Hosting --> SW["Production service worker caches app assets"]
+        SW --> Cached["Previously cached app and bundled JSON remain available offline"]
+        Cached --> Router
+        Cached --> Limits["Remote news images need internet; currency uses saved rates when available"]
+    end
+
+    subgraph Release["Development and release"]
+        Changes["Code or content changes"] --> Tests["Run Node regression tests"]
+        Tests --> Build["Run Vite production build"]
+        Build --> Git["Commit and push to GitHub"]
+        Git --> Deploy["Vercel builds dist with SPA route rewrites"]
+        Deploy --> Hosting
+    end
