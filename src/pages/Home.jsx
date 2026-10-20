@@ -6,13 +6,13 @@ import {
   ShieldAlert,
   Landmark,
   Scale,
-  Newspaper,
   MapPin,
-  Pencil,
   Download,
-  Info,
   ArrowRight,
-  Clock
+  Search,
+  ChevronRight,
+  Globe2,
+  HeartHandshake
 } from "lucide-react";
 
 import { useT } from "../hooks/useT";
@@ -25,9 +25,8 @@ import {
   formatDate
 } from "../utils/content";
 
-import BigButton from "../components/BigButton";
-import Card from "../components/Card";
 import CurrencyRates from "../components/CurrencyRates";
+import NewsImage from "../components/NewsImage";
 
 export default function Home() {
   const t = useT();
@@ -41,6 +40,16 @@ export default function Home() {
   const [offlineMessage, setOfflineMessage] =
     useState("");
 
+  const [search, setSearch] = useState("");
+  const services = [
+    { to: "/embassy", key: "embassy", description: "embassyIntro", icon: Landmark, color: "green" },
+    { to: "/rights", key: "rights", description: "rightsIntro", icon: Scale, color: "blue" },
+    { to: "/location", key: "chooseLocation", description: "locationIntro", icon: MapPin, color: "amber" },
+    { to: "/about", key: "about", description: "supportIntro", icon: HeartHandshake, color: "purple" }
+  ];
+  const filteredServices = services.filter((item) =>
+    (t(item.key) + " " + t(item.description)).toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())
+  );
   const latestNews = getPublishedNews()
     .filter((item) =>
       matchesCountry(item, countryCode)
@@ -79,205 +88,72 @@ export default function Home() {
   }
 
   return (
-    <div className="page home-page">
-      {/* Welcome */}
-      <section className="welcome dashboard-welcome">
-        <h1>{t("brand")}</h1>
-
-        <p>{t("tagline")}</p>
+    <div className="page home-page mobile-home">
+      <section className="home-hero">
+        <div className="hero-copy">
+          <span className="hero-eyebrow">{t("homeEyebrow")}</span>
+          <h1>{t("homeWelcome")}</h1>
+          <p>{t("homeWelcomeNote")}</p>
+          <Link to="/location" className="hero-location">
+            <MapPin size={15} aria-hidden="true" />
+            <span>{country ? localized(country.name, t.lang) : t("chooseLocation")}{city ? ", " + localized(city.name, t.lang) : ""}</span>
+            <ChevronRight size={15} aria-hidden="true" />
+          </Link>
+        </div>
+        <div className="hero-art" aria-hidden="true"><Globe2 size={100} strokeWidth={0.8} /><span><ShieldAlert size={27} /></span></div>
       </section>
 
-      <div className="home-dashboard">
+      <div className="home-search">
+        <Search size={22} aria-hidden="true" />
+        <label htmlFor="service-search" className="sr-only">{t("searchServices")}</label>
+        <input id="service-search" type="search" placeholder={t("searchServices")} value={search} onChange={(event) => setSearch(event.target.value)} aria-controls="home-services" />
+      </div>
 
-        {/* LOCATION */}
-        <section className="dashboard-location panel">
-          <div className="dashboard-section-heading">
-            <MapPin
-              size={24}
-              aria-hidden="true"
-            />
+      <nav className="quick-actions" aria-label={t("quickHelp")}>
+        {[{ to: "/emergency", label: "emergency", icon: ShieldAlert, color: "red" },
+          { to: "/embassy", label: "embassy", icon: Landmark, color: "green" },
+          { to: "/rights", label: "rights", icon: Scale, color: "blue" },
+          { to: "#currency-heading", label: "currencyShort", icon: Globe2, color: "amber" }].map(({ to, label, icon: Icon, color }) =>
+          to.startsWith("#") ? <a href={to} key={to}><span className={"action-icon " + color}><Icon size={26} aria-hidden="true" /></span><span>{t(label)}</span></a> :
+          <Link to={to} key={to}><span className={"action-icon " + color}><Icon size={26} aria-hidden="true" /></span><span>{t(label)}</span></Link>
+        )}
+      </nav>
 
-            <h2>{t("yourLocation")}</h2>
-          </div>
-
-          <div className="dashboard-location__value">
-            <span className="muted">
-              {t("yourCountry")}
-            </span>
-
-            <strong>
-              {country
-                ? localized(country.name, t.lang)
-                : t("notSelected")}
-            </strong>
-
-            {city && (
-              <span>
-                {localized(city.name, t.lang)}
-              </span>
-            )}
-          </div>
-
-          <BigButton
-            to="/location"
-            icon={Pencil}
-            label={t("change")}
-            variant="outline"
-          />
-        </section>
-
-        {/* EMERGENCY */}
-        <section className="dashboard-emergency panel">
-          <div className="dashboard-emergency__content">
-            <div className="dashboard-section-heading">
-              <ShieldAlert
-                size={30}
-                aria-hidden="true"
-              />
-
-              <h2>{t("emergency")}</h2>
-            </div>
-
-            <p>
-              {t("emergencyIntro")}
-            </p>
-          </div>
-
-          <BigButton
-            to="/emergency"
-            icon={ShieldAlert}
-            label={t("emergency")}
-            variant="emergency"
-            className="home-emergency"
-          />
-        </section>
-
-        {/* SERVICES */}
-        <section className="dashboard-services">
-          <div className="dashboard-section-heading">
-            <h2>{t("servicesTitle")}</h2>
-          </div>
-
-          <div className="feature-list home-services">
-            <Card
-              to="/embassy"
-              icon={Landmark}
-              title={t("embassy")}
-              description={t("embassyIntro")}
-            />
-
-            <Card
-              to="/rights"
-              icon={Scale}
-              title={t("rights")}
-              description={t("rightsIntro")}
-            />
-
-            <Card
-              to="/news"
-              icon={Newspaper}
-              title={t("news")}
-              description={t("newsIntro")}
-            />
+      <div className="mobile-home-grid">
+        <section className="home-section services-section" aria-labelledby="services-heading">
+          <div className="home-section-heading"><h2 id="services-heading">{t("servicesTitle")}</h2><span className="section-kicker">{t("hereToHelp")}</span></div>
+          <div id="home-services" className="service-rows">
+            {filteredServices.length === 0 && <p role="status">{t("noneFound")}</p>}
+            {filteredServices.map(({ to, key, description, icon: Icon, color }) => <Link to={to} key={to} className="service-row">
+              <span className={"action-icon " + color}><Icon size={25} aria-hidden="true" /></span>
+              <span className="service-row-copy"><strong>{t(key)}</strong><small>{t(description)}</small></span>
+              <ChevronRight size={20} aria-hidden="true" />
+            </Link>)}
           </div>
         </section>
 
-        {/* LATEST NEWS */}
-        <aside className="dashboard-updates panel">
-          <div className="dashboard-section-heading">
-            <Newspaper
-              size={24}
-              aria-hidden="true"
-            />
-
-            <h2>{t("latestUpdates")}</h2>
+        <section className="home-section news-section" aria-labelledby="home-news-heading">
+          <div className="home-section-heading"><h2 id="home-news-heading">{t("news")}</h2><Link to="/news">{t("seeAllNews")} <ArrowRight size={15} aria-hidden="true" /></Link></div>
+          <div className="home-news-carousel">
+            {latestNews.length === 0 && <p>{t("newsEmpty")}</p>}
+            {latestNews.map((article) => <article className="home-news-card" key={article.id}>
+              <NewsImage article={article} />
+              <div className="home-news-card-body"><span className="news-publisher">{article.sourceName}</span>
+                <h3><Link to={"/news/" + article.id}>{localized(article.title, t.lang)}</Link></h3>
+                <span className="metadata">{formatDate(article.publishedAt, t.lang)}</span>
+              </div>
+            </article>)}
           </div>
-
-          <div className="dashboard-news-list">
-            {latestNews.length === 0 ? (
-              <p className="muted">
-                {t("newsEmpty")}
-              </p>
-            ) : (
-              latestNews.map((article) => (
-                <Link
-                  key={article.id}
-                  to={`/news/${article.id}`}
-                  className="dashboard-news-item"
-                >
-                  <strong>
-                    {localized(article.title, t.lang)}
-                  </strong>
-
-                  <span className="dashboard-news-date">
-                    <Clock
-                      size={16}
-                      aria-hidden="true"
-                    />
-
-                    {formatDate(
-                      article.publishedAt,
-                      t.lang
-                    )}
-                  </span>
-                </Link>
-              ))
-            )}
-          </div>
-
-          <Link
-            to="/news"
-            className="dashboard-view-all"
-          >
-            <span>{t("seeAllNews")}</span>
-
-            <ArrowRight
-              size={20}
-              aria-hidden="true"
-            />
-          </Link>
-        </aside>
-
-        {/* OFFLINE */}
-        <section className="dashboard-offline panel">
-          <div>
-            <div className="dashboard-section-heading">
-              <Download
-                size={24}
-                aria-hidden="true"
-              />
-
-              <h2>{t("saveOffline")}</h2>
-            </div>
-
-            <p>{t("offlineDescription")}</p>
-          </div>
-
-          <BigButton
-            icon={Download}
-            label={t("saveOffline")}
-            variant="outline"
-            onClick={saveOffline}
-          />
-
-          {offlineMessage && (
-            <p role="status" className="status-text">
-              {offlineMessage}
-            </p>
-          )}
         </section>
       </div>
 
       <CurrencyRates />
-
-      <Link
-        to="/about"
-        className="text-link dashboard-about"
-      >
-        <Info size={20} aria-hidden="true" />
-
-        <span>{t("about")}</span>
-      </Link>
+      <section className="home-offline">
+        <span className="action-icon green"><Download size={24} aria-hidden="true" /></span>
+        <div><h2>{t("saveOffline")}</h2><p>{t("offlineDescription")}</p></div>
+        <button type="button" onClick={saveOffline} aria-label={t("saveOffline")}><Download size={22} aria-hidden="true" /></button>
+        {offlineMessage && <p className="offline-status" role="status">{offlineMessage}</p>}
+      </section>
     </div>
   );
 }

@@ -13,6 +13,7 @@ import { LanguageProvider, useT } from "./hooks/useT";
 import { CountryProvider } from "./hooks/useCountry";
 
 import Header from "./components/Header";
+import MobileNav from "./components/MobileNav";
 import Ticker from "./components/Ticker";
 import OfflineBanner from "./components/OfflineBanner";
 
@@ -97,6 +98,8 @@ function Layout() {
           </Routes>
         </Suspense>
       </main>
+
+      <MobileNav />
 
       <footer className="site-footer">
         <Link to="/about">

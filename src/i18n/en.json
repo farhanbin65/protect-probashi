@@ -124,5 +124,13 @@
   "currencyChoose": "Currency — all available",
   "currencyUpdated": "Rate updated",
   "currencyDhaka": "Bangladesh time",
-  "currencyNote": "Daily reference rates. Banks and remittance services may offer different rates; fees and incentives are not included."
+  "currencyNote": "Daily reference rates. Banks and remittance services may offer different rates; fees and incentives are not included.",
+  "homeEyebrow": "WITH YOU, WHEREVER YOU ARE",
+  "homeWelcome": "A little closer to home.",
+  "homeWelcomeNote": "Help, information and support for life abroad.",
+  "searchServices": "What do you need help with?",
+  "quickHelp": "Quick help",
+  "currencyShort": "Exchange rate",
+  "hereToHelp": "Here to help",
+  "supportIntro": "Our purpose, privacy and information."
 }

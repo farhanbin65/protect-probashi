@@ -12,6 +12,7 @@ import App from "./App.jsx";
 
 import "./styles.css";
 import "./desktop.css";
+import "./mobile-ui.css";
 
 registerSW({
   immediate: true
