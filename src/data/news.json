@@ -1,56 +1,79 @@
 [
   {
-    "id": "sample-sa-alert",
-    "status": "published",
+    "id": "probashi-card-pilot-2026",
     "title": {
-      "bn": "নমুনা সতর্কতা — এটি প্রকৃত জরুরি সংবাদ নয়",
-      "en": "SAMPLE ALERT — This is not a real emergency"
+      "en": "Probashi Card trials underway in several countries",
+      "bn": "কয়েকটি দেশে পরীক্ষামূলকভাবে চালু হচ্ছে প্রবাসী কার্ড"
     },
     "summary": {
-      "bn": "এটি নিউজ টিকার পরীক্ষা করার জন্য তৈরি নমুনা তথ্য। প্রকৃত সতর্কতা নয়।",
-      "en": "Demonstration content for testing the news ticker. This is not a real alert."
-    },
-    "countryCodes": ["SA"],
-    "urgent": true,
-    "sourceName": "SAMPLE DATA - VERIFY BEFORE PUBLISHING",
-    "sourceUrl": "",
-    "publishedAt": "2026-01-01",
-    "expiresAt": null
-  },
-  {
-    "id": "sample-global-news",
-    "status": "published",
-    "title": {
-      "bn": "নমুনা সংবাদ — প্রবাসীদের জন্য তথ্যসেবা",
-      "en": "SAMPLE NEWS — Information services for expatriates"
-    },
-    "summary": {
-      "bn": "এখানে যাচাই করা সরকারি ঘোষণা ও প্রবাসীদের গুরুত্বপূর্ণ সংবাদ প্রকাশ করা হবে।",
-      "en": "Verified government announcements and important expatriate news will appear here."
+      "en": "The Daily Star reports that Bangladesh is trialling the Probashi Card, including in Jordan and South Korea. Priority services and higher remittance incentives were described as planned benefits, rather than benefits already available everywhere.",
+      "bn": "দ্য ডেইলি স্টারের প্রতিবেদনে বলা হয়েছে, জর্ডান ও দক্ষিণ কোরিয়াসহ কয়েকটি দেশে প্রবাসী কার্ডের পরীক্ষা চলছে। অগ্রাধিকার সেবা ও বাড়তি রেমিট্যান্স প্রণোদনা পরিকল্পিত সুবিধা; সব দেশে এখনই চালু হয়েছে এমন নয়।"
     },
     "countryCodes": [],
+    "sourceName": "The Daily Star",
+    "sourceUrl": "https://www.thedailystar.net/news/work-and-migration/news/probashi-card-being-tested-4-5-countries-nur-4297681",
+    "publishedAt": "2026-10-13",
+    "imageUrl": "https://www.thedailystar.net/sites/default/files/styles/big_1/public/2026-10/Nurul%20Haque%20Nur.jpg?h=d489a087",
+    "imageCredit": "Photo: The Daily Star",
+    "imageAlt": {
+      "en": "Nurul Haque Nur at an event on migrant welfare",
+      "bn": "অভিবাসীদের কল্যাণবিষয়ক অনুষ্ঠানে নুরুল হক নুর"
+    },
+    "status": "published",
     "urgent": false,
-    "sourceName": "SAMPLE DATA - VERIFY BEFORE PUBLISHING",
-    "sourceUrl": "",
-    "publishedAt": "2026-01-01",
-    "expiresAt": null
+    "expiresAt": null,
+    "curatedAt": "2026-10-20"
   },
   {
-    "id": "sample-uae-news",
-    "status": "published",
+    "id": "overseas-employment-september-2026",
     "title": {
-      "bn": "নমুনা সংবাদ — সংযুক্ত আরব আমিরাত",
-      "en": "SAMPLE NEWS — United Arab Emirates"
+      "en": "September overseas employment clearances fell year on year",
+      "bn": "সেপ্টেম্বরে বিদেশে কর্মসংস্থানের ছাড়পত্র আগের বছরের তুলনায় কমেছে"
     },
     "summary": {
-      "bn": "এটি সংযুক্ত আরব আমিরাতের সংবাদ ফিল্টার পরীক্ষা করার নমুনা।",
-      "en": "This example tests country-specific news filtering."
+      "en": "The Business Standard reports that September overseas employment clearances were 29% lower than a year earlier, citing BMET figures. Clearances nevertheless increased compared with August.",
+      "bn": "বিএমইটির তথ্য উদ্ধৃত করে দ্য বিজনেস স্ট্যান্ডার্ড জানিয়েছে, সেপ্টেম্বরে বিদেশে কর্মসংস্থানের ছাড়পত্র আগের বছরের একই মাসের তুলনায় ২৯ শতাংশ কমেছে। তবে আগস্টের তুলনায় সংখ্যা বেড়েছে।"
     },
-    "countryCodes": ["AE"],
+    "countryCodes": [],
+    "sourceName": "The Business Standard",
+    "sourceUrl": "https://www.tbsnews.net/bangladesh/migration/overseas-jobs-fall-29-september-yoy-1562796",
+    "publishedAt": "2026-10-05",
+    "imageUrl": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2024/12/24/migrant_workers_final_0.jpeg",
+    "imageCredit": "Photo: Reuters / The Business Standard",
+    "imageAlt": {
+      "en": "Migrant workers pictured in the original report",
+      "bn": "মূল প্রতিবেদনে ব্যবহৃত অভিবাসী শ্রমিকদের ছবি"
+    },
+    "status": "published",
     "urgent": false,
-    "sourceName": "SAMPLE DATA - VERIFY BEFORE PUBLISHING",
-    "sourceUrl": "",
-    "publishedAt": "2026-01-01",
-    "expiresAt": null
+    "expiresAt": null,
+    "curatedAt": "2026-10-20"
+  },
+  {
+    "id": "saudi-skill-test-cost-september-2026",
+    "title": {
+      "en": "Report highlights higher Saudi skill-test costs",
+      "bn": "সৌদির দক্ষতা পরীক্ষার খরচ বৃদ্ধি নিয়ে প্রতিবেদন"
+    },
+    "summary": {
+      "en": "The Business Standard reports that the Saudi Taqamul skill-test fee increased from $50 to $85 in September. Its report describes the additional burden on Bangladeshi workers and concerns about unchanged wages.",
+      "bn": "দ্য বিজনেস স্ট্যান্ডার্ড জানিয়েছে, সেপ্টেম্বরে সৌদির তাকামুল দক্ষতা পরীক্ষার ফি ৫০ থেকে ৮৫ ডলার হয়েছে। প্রতিবেদনে বাংলাদেশি কর্মীদের বাড়তি ব্যয় ও মজুরি না বাড়ার উদ্বেগ তুলে ধরা হয়েছে।"
+    },
+    "countryCodes": [
+      "SA"
+    ],
+    "sourceName": "The Business Standard",
+    "sourceUrl": "https://www.tbsnews.net/bangladesh/migration/saudi-skill-test-gets-costlier-low-paid-bangladeshi-workers-see-no-wage-gain",
+    "publishedAt": "2026-09-24",
+    "imageUrl": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2026/09/24/saudi-employee.png",
+    "imageCredit": "Illustration: The Business Standard",
+    "imageAlt": {
+      "en": "Illustration accompanying the Saudi skill-test report",
+      "bn": "সৌদির দক্ষতা পরীক্ষা নিয়ে প্রতিবেদনের চিত্র"
+    },
+    "status": "published",
+    "urgent": false,
+    "expiresAt": null,
+    "curatedAt": "2026-10-20"
   }
 ]

@@ -1,5 +1,4 @@
 import {
-  useRef,
   useState
 } from "react";
 
@@ -7,20 +6,17 @@ import { useNavigate } from "react-router-dom";
 
 import {
   MapPin,
-  LocateFixed,
   Check,
-  List,
-  Globe
+  Search
 } from "lucide-react";
 
 import { useT } from "../hooks/useT";
 import { useCountry } from "../hooks/useCountry";
-import { useOnline } from "../hooks/useOnline";
 
 import { localized } from "../utils/content";
 
 import BigButton from "../components/BigButton";
-import { locateCountry } from "../utils/location";
+import { searchLocations } from "../utils/searchLocations";
 
 export default function Location() {
   const t = useT();
@@ -32,11 +28,7 @@ export default function Location() {
     setLocation
   } = useCountry();
 
-  const online = useOnline();
   const navigate = useNavigate();
-
-  const countrySelectRef = useRef(null);
-  const detectionRequest = useRef(0);
 
   const [selectedCountry, setSelectedCountry] =
     useState(countryCode || "");
@@ -44,7 +36,8 @@ export default function Location() {
   const [selectedCity, setSelectedCity] =
     useState(cityId || "");
 
-  const [detecting, setDetecting] = useState(false);
+  const [query, setQuery] = useState("");
+  const results = searchLocations(countries, query);
   const [error, setError] = useState("");
 
   const country = countries.find(
@@ -59,29 +52,8 @@ export default function Location() {
       return;
     }
 
-    detectionRequest.current += 1;
     setLocation(selectedCountry, selectedCity || null);
     navigate("/");
-  }
-
-  async function detectLocation() {
-    setError("");
-    if (!online) {
-      setError(t("locationOffline"));
-      return;
-    }
-    const request = ++detectionRequest.current;
-    setDetecting(true);
-    try {
-      const location = await locateCountry(countries, navigator.geolocation);
-      if (request !== detectionRequest.current) return;
-      setLocation(location.countryCode, location.cityId);
-      navigate("/");
-    } catch (failure) {
-      if (request === detectionRequest.current) setError(t(failure.message));
-    } finally {
-      if (request === detectionRequest.current) setDetecting(false);
-    }
   }
 
   return (
@@ -94,49 +66,39 @@ export default function Location() {
 
       <p>{t("locationIntro")}</p>
 
-      <div className="panel stack">
-        <p>{t("locationPermission")}</p>
-
-        <BigButton
-          icon={LocateFixed}
-          label={
-            detecting
-              ? t("detecting")
-              : t("useLocation")
-          }
-          onClick={detectLocation}
-          disabled={detecting}
+      <section className="panel stack location-search">
+        <label htmlFor="location-search" className="item-heading">
+          <Search size={22} aria-hidden="true" />
+          {t("searchLocation")}
+        </label>
+        <input
+          id="location-search"
+          type="search"
+          value={query}
+          placeholder={t("searchLocationPlaceholder")}
+          onChange={(event) => setQuery(event.target.value)}
         />
-
-        <BigButton
-          icon={List}
-          label={t("manualLocation")}
-          variant="outline"
-          onClick={() => {
-            countrySelectRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-            countrySelectRef.current?.focus();
-            try {
-              countrySelectRef.current?.showPicker?.();
-            } catch {
-              // Some browsers only allow focus on native selects.
-            }
-          }}
-        />
-
-        <p className="muted">
-          {t("locationPrivacy")}
-        </p>
-
-        <a
-          className="text-link"
-          href="https://www.openstreetmap.org/copyright"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Globe size={20} aria-hidden="true" />
-          <span>{t("osmAttribution")}</span>
-        </a>
-      </div>
+        <p className="metadata">{t("locationSearchNote")}</p>
+        {query.trim() && (
+          <div className="stack" aria-live="polite">
+            {results.length === 0 && <p>{t("noneFound")}</p>}
+            {results.map(({ country: item, city }) => (
+              <BigButton
+                key={`${item.code}-${city?.id || "country"}`}
+                icon={MapPin}
+                variant="outline"
+                label={[city && localized(city.name, t.lang), localized(item.name, t.lang)].filter(Boolean).join(", ")}
+                onClick={() => {
+                  setSelectedCountry(item.code);
+                  setSelectedCity(city?.id || "");
+                  setError("");
+                  setQuery("");
+                }}
+              />
+            ))}
+          </div>
+        )}
+      </section>
 
       {error && (
         <p className="notice" role="alert">
@@ -153,12 +115,9 @@ export default function Location() {
         </label>
 
         <select
-          ref={countrySelectRef}
           id="country"
           value={selectedCountry}
           onChange={(event) => {
-            detectionRequest.current += 1;
-            setDetecting(false);
             setSelectedCountry(event.target.value);
             setSelectedCity("");
             setError("");

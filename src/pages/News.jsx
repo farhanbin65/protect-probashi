@@ -1,3 +1,4 @@
+import NewsImage from "../components/NewsImage";
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
@@ -59,9 +60,7 @@ export default function News() {
 
       <p>{t("newsIntro")}</p>
 
-      <p className="notice">
-        {t("sampleWarning")}
-      </p>
+      <p className="metadata">{t("newsSummaryNote")}</p>
 
       <div
         className="news-filters"
@@ -99,6 +98,7 @@ export default function News() {
               className="panel news-card"
               key={article.id}
             >
+              <NewsImage article={article} />
               {article.urgent && (
                 <span className="urgent-label">
                   <span

@@ -71,8 +71,10 @@ export default function Header() {
           </span>
 
           <span className="brand-text">
-            <strong>{t("brand")}</strong>
-            <small>PP</small>
+            <strong lang={t.lang}>{t("brand")}</strong>
+            <small lang={t.lang === "bn" ? "en" : "bn"}>
+              {t.lang === "bn" ? "Protect Probashi" : "প্রটেক্ট প্রবাসী"}
+            </small>
           </span>
         </Link>
 

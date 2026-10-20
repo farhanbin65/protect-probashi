@@ -1,3 +1,4 @@
+import NewsImage from "../components/NewsImage";
 import { Link, useParams } from "react-router-dom";
 
 import {
@@ -59,9 +60,7 @@ export default function NewsDetail() {
         </h1>
       </div>
 
-      <p className="notice">
-        {t("sampleWarning")}
-      </p>
+      <p className="metadata">{t("newsSummaryNote")}</p>
 
       {article.urgent && (
         <p className="urgent-label">
@@ -78,6 +77,8 @@ export default function NewsDetail() {
         {t("published")}:{" "}
         {formatDate(article.publishedAt, t.lang)}
       </p>
+
+      <NewsImage article={article} />
 
       <section className="panel">
         <p>
