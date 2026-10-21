@@ -36,6 +36,14 @@ export default function News() {
 
   const [filter, setFilter] = useState("all");
   const [page, setPage] = useState(1);
+  const [largeScreen, setLargeScreen] = useState(() => window.matchMedia("(min-width: 1100px)").matches);
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 1100px)");
+    const update = () => { setLargeScreen(media.matches); setPage(1); };
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
+  const pageSize = largeScreen ? 12 : 6;
   const listStart = useRef(null);
   useEffect(() => { setPage(1); }, [countryCode]);
 
@@ -54,9 +62,9 @@ export default function News() {
     return true;
   });
 
-  const pageCount = Math.max(1, Math.ceil(articles.length / 6));
+  const pageCount = Math.max(1, Math.ceil(articles.length / pageSize));
   const currentPage = Math.min(page, pageCount);
-  const visibleArticles = articles.slice((currentPage - 1) * 6, currentPage * 6);
+  const visibleArticles = articles.slice((currentPage - 1) * pageSize, currentPage * pageSize);
   const number = value => new Intl.NumberFormat(t.lang === "bn" ? "bn-BD" : "en-GB").format(value);
   function changePage(next) {
     setPage(next);
@@ -65,7 +73,7 @@ export default function News() {
   }
 
   return (
-    <div className="page">
+    <div className="page news-page">
       <div className="page-heading">
         <Newspaper size={30} aria-hidden="true" />
 
@@ -103,10 +111,10 @@ export default function News() {
 
       <p ref={listStart} tabIndex={-1} className="metadata news-page-status" role="status">
         {articles.length > 0 && (t.lang === "bn"
-          ? `${number(articles.length)}টি খবরের মধ্যে ${number((currentPage - 1) * 6 + 1)}–${number(Math.min(currentPage * 6, articles.length))}`
-          : `Showing ${(currentPage - 1) * 6 + 1}–${Math.min(currentPage * 6, articles.length)} of ${articles.length} articles`)}
+          ? `${number(articles.length)}টি খবরের মধ্যে ${number((currentPage - 1) * pageSize + 1)}–${number(Math.min(currentPage * pageSize, articles.length))}`
+          : `Showing ${(currentPage - 1) * pageSize + 1}–${Math.min(currentPage * pageSize, articles.length)} of ${articles.length} articles`)}
       </p>
-      <div className="stack">
+      <div className="news-results-grid">
         {articles.length === 0 && (
           <p>{t("newsEmpty")}</p>
         )}

@@ -229,3 +229,22 @@ html:lang(bn) .mobile-nav__item { font-size: 11px; }
 .weather-temperature { font-size: 3rem; font-weight: 400; color: var(--primary); }
 .weather-forecast { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin: 18px 0; }
 .weather-forecast > div { display: grid; gap: 5px; background: var(--primary-tint); padding: 12px 8px; border-radius: 12px; text-align: center; font-size: .8rem; }
+
+.news-results-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+.clock-weather-grid > * { min-width: 0; }
+@media (min-width: 700px) {
+  .news-results-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1100px) {
+  .world-clock-page { max-width: 1200px; }
+  .clock-weather-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
+  .clock-weather-grid > .section-spacing { margin-top: 16px; }
+  .news-results-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .news-results-grid .news-card { padding: 16px; display: flex; flex-direction: column; }
+  .news-results-grid .news-image { margin: 0 0 12px; }
+  .news-results-grid .news-image img { height: 140px; width: 100%; object-fit: cover; }
+  .news-results-grid .news-card h2 { font-size: 1rem; line-height: 1.5; margin: 0 0 10px; }
+  .news-results-grid .news-card p { font-size: .82rem; }
+  .news-results-grid .news-card .metadata, .news-results-grid .news-source { font-size: .72rem; }
+  .news-results-grid .news-card > .text-link { margin-top: auto; padding-top: 12px; font-size: .82rem; }
+}

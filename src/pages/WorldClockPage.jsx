@@ -9,7 +9,9 @@ export default function WorldClockPage() {
   return <div className="page world-clock-page">
     <Link className="text-link" to="/"><ArrowLeft size={18} aria-hidden="true" />{t('home')}</Link>
     <h1>{t('worldClock')}</h1>
-    <WorldClock />
-    <Weather />
+    <div className="clock-weather-grid">
+      <WorldClock />
+      <Weather />
+    </div>
   </div>;
 }
