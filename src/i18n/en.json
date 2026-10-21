@@ -140,7 +140,7 @@
   "emergencyUnavailable": "No verified local emergency number is available in this directory.",
   "embassyStaff": "Embassy officials",
   "sourceRetrieved": "Source retrieved",
-  "worldClock": "World clock",
-  "worldClockIntro": "Compare your local time with Dhaka.",
+  "worldClock": "Clock & weather",
+  "worldClockIntro": "Compare time with Dhaka and check your city’s weather.",
   "newsFeedUnavailable": "Live feeds are unavailable. Showing saved news."
 }

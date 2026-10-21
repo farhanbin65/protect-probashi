@@ -30,8 +30,8 @@ export default defineConfig({
         scope: "/",
         display: "standalone",
 
-        background_color: "#FAFAF7",
-        theme_color: "#0F5132",
+        background_color: "#F7F7FC",
+        theme_color: "#4338CA",
 
         lang: "bn",
 
