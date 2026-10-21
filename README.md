@@ -71,80 +71,110 @@ The diagram below covers user navigation, content maintenance, currency fetching
 
 ```mermaid
 flowchart TD
-    Visitor["Worker opens Protect Probashi"] --> Hosting["Vercel serves the Vite production build"]
+    Visitor["Worker opens Protect Probashi"] --> Hosting["Vercel: Vite app and serverless APIs"]
     Hosting --> Router["React BrowserRouter"]
-    Router --> Language["LanguageProvider: Bangla or English"]
-    Router --> Location["CountryProvider: saved country and current city"]
-    Language --> Shell["Bilingual header, navigation and news ticker"]
-    Location --> Shell
-    Shell --> Home["Home: location, emergency help, services, news and currency"]
-    Home --> Search["Location: search country or city in Bangla or English"]
-    Search --> Confirm["Select result or use country and city selectors"]
-    Confirm --> Save["Confirm: save country on device and set current city"]
-    Save --> Location
-    Save --> Home
-    Home --> Emergency["Emergency: selected country's services and verified embassy contacts"]
-    Home --> Embassy["Embassy: all offices with country filter and local offices first"]
+    Router --> Preferences["Bangla or English; saved country and current city"]
+    Preferences --> Shell["Bilingual header, navigation and RSS news ticker"]
+    Shell --> Home["Home: services, news preview and currency"]
+    Home --> Location["Search and select country or city"]
+    Emergency --> Location
+    Location --> Save["Save country on device; set current city"]
+    Save --> Return["Return to requested page; otherwise Home"]
+    Return --> Emergency
+    Return --> Home
+    Home --> Emergency["Emergency: country services and curated embassy contacts"]
+    Home --> Embassy["Embassy: search and country filter; expand office for details and officers"]
     Home --> Rights["Rights: global and selected-country guidance"]
-    Rights --> RightsDetail["Guidance detail and links to help"]
-    Home --> News["News: all, my country or worldwide"]
-    Shell --> NewsDetail["News detail: bilingual summary, image, date and source"]
-    News --> NewsDetail
-    NewsDetail --> Publisher["Read original report on publisher website"]
-    Shell --> About["About: purpose, limitations, privacy and reporting status"]
+    Rights --> RightsDetail["Guidance detail and help links"]
+    Home --> News["News: filters and pagination; 12 cards on large screens, 6 otherwise"]
+    News --> NewsDetail["Original feed headline and excerpt or curated summary; image, time and source"]
+    NewsDetail --> Publisher["Full article on publisher website"]
+    Shell --> About["About: purpose, limitations and privacy"]
+    Home --> ClockPage["Clock and weather; side by side on large screens"]
 
-    subgraph Content["Content maintenance and local data"]
-        Editors["Maintainer checks sources and edits JSON"] --> Verified["embassies.json: five verified contact records"]
-        Editors --> Imported["bd_missions.json: imported mission directory"]
-        Editors --> CountryData["countries.json: verified country and emergency data"]
-        CountryData --> Countries["directoryCountries: merge countries and mission cities"]
-        Imported --> Countries
-        Countries --> Search
+    subgraph Content["Content maintenance"]
+        Editors["Maintainer checks official sources"] --> Curated["embassies.json: curated contact records"]
+        Editors --> Missions["bd_missions.json: global mission directory"]
+        MissionSync["Mission scraper: discover official sites and contact pages"] --> MissionMerge["Fill missing fields; preserve values; record conflicts and sources"]
+        MissionMerge --> Missions
+        MissionMerge --> Backups["Timestamped backups, previews and reports"]
+        EmergencySync["Emergency scraper: government travel advice for configured countries"] --> Numbers["emergency_numbers.json: sourced numbers and separately marked user additions"]
+        EmergencySync --> Backups
+        Editors --> CountryData["countries.json: curated countries and emergency data"]
+        CountryData --> Countries["Merge countries, mission cities and emergency-only countries"]
+        Missions --> Countries
+        Numbers --> Countries
         Countries --> Location
-        Verified --> Merge["Normalize missions and deduplicate; verified records take precedence"]
-        Imported --> Merge
+        Countries --> Emergency
+        Curated --> Merge["Normalize missions and deduplicate; curated records take precedence"]
+        Missions --> Merge
         Countries --> Merge
         Merge --> Embassy
-        Verified --> Emergency
-        CountryData --> Emergency
-        Editors --> RightsData["rights.json: guidance; currently sample content"]
+        Details["mission_details.json: reviewed optional additions"] --> Embassy
+        Curated --> Emergency
+        Countries --> Embassy
+        Editors --> RightsData["rights.json: currently sample guidance"]
         RightsData --> Rights
         RightsData --> RightsDetail
-        Editors --> NewsData["news.json: manually curated reports with attribution"]
-        NewsData --> Published["Exclude drafts, future posts and expired stories; sort newest first"]
-        Published --> News
-        Published --> NewsDetail
-        Published --> Home
-        Published --> Shell
     end
 
-    subgraph Currency["Currency to BDT"]
-        Home --> LoadRates["Load daily exchange rates"]
-        LoadRates --> Fresh{"Valid cache before next update?"}
-        Fresh -->|Yes| Convert["Choose currency and amount; divide by BDT-base rate"]
-        Fresh -->|No| API["ExchangeRate-API HTTPS request with timeout"]
-        API -->|Success| Cache["Validate response and save rates locally"]
-        Cache --> Convert
-        API -->|Failure with cache| Stale["Show saved rates with stale warning"]
-        Stale --> Convert
-        API -->|Failure without cache| Retry["Show error and retry button"]
+    subgraph NewsFlow["RSS and curated news"]
+        Feeds["Prothom Alo Bangla and English RSS"] --> NewsAPI["GET /api/news: fetch feeds independently; 15-minute server cache"]
+        NewsAPI --> Normalize["Normalize feed excerpts, images and attribution; reject future and older-than-seven-day articles"]
+        Normalize --> NewsCache["useNews: 15-minute device cache; deduplicate and sort"]
+        CuratedNews["news.json: published, nonexpired curated reports"] --> NewsCache
+        NewsCache --> News
+        NewsCache --> NewsDetail
+        NewsCache --> Shell
+        NewsCache --> Home
+        NewsAPI -->|Unavailable| SavedNews["Use saved news and curated reports"]
+        SavedNews --> NewsCache
+    end
+
+    subgraph Currency["Currency conversion to BDT"]
+        Home --> LoadRates["Load exchange rates"]
+        LoadRates --> Fresh{"Fresh device cache?"}
+        Fresh -->|Yes| Convert["Select amount and currency; convert to BDT"]
+        Fresh -->|No| Primary["ExchangeRate-API v4; USD base; timeout"]
+        Primary -->|Valid and fresh| NormalizeRates["Normalize USD rates to BDT base; cache on device"]
+        Primary -->|Failed, invalid or stale| Fallback["GET /api/exchange-rates: Open Exchange Rates; server-side App ID"]
+        Fallback -->|Valid and fresh| NormalizeRates
+        Fallback -->|Unavailable| CacheCheck{"Saved rates available?"}
+        CacheCheck -->|Yes| Stale["Show saved rates with stale notice"]
+        CacheCheck -->|No| Retry["Error and retry button"]
         Retry --> LoadRates
-        Convert --> RateDisplay["Display BDT result, provider link and Bangladesh-time update stamp"]
+        Stale --> Convert
+        NormalizeRates --> Convert
+        Convert --> Display["BDT result, active provider and Bangladesh-time timestamp"]
+    end
+
+    subgraph TimeWeather["Clock and weather"]
+        ClockPage --> Clocks["Pinned Dhaka; add or remove city clocks; save on device"]
+        Clocks --> TimeZones["Intl time zones: live local time, DST and difference from Dhaka"]
+        ClockPage --> CitySearch["Weather city search; defaults to Dhaka"]
+        CitySearch --> Geocoding["Open-Meteo geocoding: choose matching city"]
+        Geocoding --> Forecast["Open-Meteo forecast: temperature, humidity, wind and three-day highs/lows"]
+        Forecast --> WeatherDisplay["Local weather time and provider attribution"]
+        Forecast -->|Failure| WeatherRetry["Unavailable notice and retry"]
     end
 
     subgraph Offline["Offline behavior"]
-        Hosting --> SW["Production service worker caches app assets"]
-        SW --> Cached["Previously cached app and bundled JSON remain available offline"]
-        Cached --> Router
-        Cached --> Limits["Remote news images need internet; currency uses saved rates when available"]
+        Hosting --> SW["Production service worker precaches matched app assets and bundled JSON"]
+        SW --> Router
+        SW --> Limits["Remote news images, hero PNG and weather are not precached"]
+        SavedNews --> OfflineNews["Previously saved feed text remains available"]
+        Stale --> OfflineRates["Saved currency rates remain available"]
+        Clocks --> OfflineClock["Clock calculation works offline using device time"]
     end
 
     subgraph Release["Development and release"]
-        Changes["Code or content changes"] --> Tests["Run Node regression tests"]
-        Tests --> Build["Run Vite production build"]
+        Changes["Code or data changes"] --> Tests["Node regression tests; Python scraper tests when relevant"]
+        Tests --> Build["Vite production build"]
         Build --> Git["Commit and push to GitHub"]
-        Git --> Deploy["Vercel builds dist with SPA route rewrites"]
+        Git --> Deploy["Vercel build; SPA rewrites exclude API routes"]
         Deploy --> Hosting
+        Secret["Vercel environment: OPEN_EXCHANGE_RATES_APP_ID"] --> Fallback
+        Local["Vite development middleware"] --> NewsAPI
     end
 ```
 
