@@ -45,6 +45,7 @@ export function mergeMissions(verified, imported, countries) {
       city: cityId,
       phone: record.phone || null,
       phoneNote: record.phoneNote || null,
+      emailNote: record.emailNote || null,
       countryEmergency: record.countryEmergency || null,
       officers: Array.isArray(record.officers) ? record.officers : [],
       hotline: record.hotline || null,

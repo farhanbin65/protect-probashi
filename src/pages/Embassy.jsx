@@ -78,7 +78,13 @@ function EmbassyRecord({ mission, country }) {
   }
 
   return (
-    <details className="panel embassy-record">
+    <details className="panel embassy-record" name="embassy-directory" onToggle={event => {
+      if (event.currentTarget.open) {
+        event.currentTarget.closest('.embassy-grid')?.querySelectorAll('details.embassy-record[open]').forEach(other => {
+          if (other !== event.currentTarget) other.open = false;
+        });
+      }
+    }}>
       <summary className="embassy-summary">
       <div className="item-heading">
         <Landmark
@@ -172,6 +178,7 @@ function EmbassyRecord({ mission, country }) {
           {mission.email || t("unverified")}
         </p>
 
+        {mission.emailNote && <p className="metadata">{localized(mission.emailNote, t.lang)}</p>}
         {mission.email && (
           <BigButton
             icon={Mail}
