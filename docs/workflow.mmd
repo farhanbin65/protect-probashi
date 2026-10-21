@@ -1,106 +1,16 @@
 flowchart TD
-    Visitor["Worker opens Protect Probashi"] --> Hosting["Vercel: Vite app and serverless APIs"]
-    Hosting --> Router["React BrowserRouter"]
-    Router --> Preferences["Bangla or English; saved country and current city"]
-    Preferences --> Shell["Bilingual header, navigation and RSS news ticker"]
-    Shell --> Home["Home: services, news preview and currency"]
-    Home --> Location["Search and select country or city"]
-    Emergency --> Location
-    Location --> Save["Save country on device; set current city"]
-    Save --> Return["Return to requested page; otherwise Home"]
-    Return --> Emergency
-    Return --> Home
-    Home --> Emergency["Emergency: country services and curated embassy contacts"]
-    Home --> Embassy["Embassy: search and country filter; expand office for details and officers"]
-    Home --> Rights["Rights: global and selected-country guidance"]
-    Rights --> RightsDetail["Guidance detail and help links"]
-    Home --> News["News: filters and pagination; 12 cards on large screens, 6 otherwise"]
-    News --> NewsDetail["Original feed headline and excerpt or curated summary; image, time and source"]
-    NewsDetail --> Publisher["Full article on publisher website"]
-    Shell --> About["About: purpose, limitations and privacy"]
-    Home --> ClockPage["Clock and weather; side by side on large screens"]
-
-    subgraph Content["Content maintenance"]
-        Editors["Maintainer checks official sources"] --> Curated["embassies.json: curated contact records"]
-        Editors --> Missions["bd_missions.json: global mission directory"]
-        MissionSync["Mission scraper: discover official sites and contact pages"] --> MissionMerge["Fill missing fields; preserve values; record conflicts and sources"]
-        MissionMerge --> Missions
-        MissionMerge --> Backups["Timestamped backups, previews and reports"]
-        EmergencySync["Emergency scraper: government travel advice for configured countries"] --> Numbers["emergency_numbers.json: sourced numbers and separately marked user additions"]
-        EmergencySync --> Backups
-        Editors --> CountryData["countries.json: curated countries and emergency data"]
-        CountryData --> Countries["Merge countries, mission cities and emergency-only countries"]
-        Missions --> Countries
-        Numbers --> Countries
-        Countries --> Location
-        Countries --> Emergency
-        Curated --> Merge["Normalize missions and deduplicate; curated records take precedence"]
-        Missions --> Merge
-        Countries --> Merge
-        Merge --> Embassy
-        Details["mission_details.json: reviewed optional additions"] --> Embassy
-        Curated --> Emergency
-        Countries --> Embassy
-        Editors --> RightsData["rights.json: currently sample guidance"]
-        RightsData --> Rights
-        RightsData --> RightsDetail
-    end
-
-    subgraph NewsFlow["RSS and curated news"]
-        Feeds["Prothom Alo Bangla and English RSS"] --> NewsAPI["GET /api/news: fetch feeds independently; 15-minute server cache"]
-        NewsAPI --> Normalize["Normalize feed excerpts, images and attribution; reject future and older-than-seven-day articles"]
-        Normalize --> NewsCache["useNews: 15-minute device cache; deduplicate and sort"]
-        CuratedNews["news.json: published, nonexpired curated reports"] --> NewsCache
-        NewsCache --> News
-        NewsCache --> NewsDetail
-        NewsCache --> Shell
-        NewsCache --> Home
-        NewsAPI -->|Unavailable| SavedNews["Use saved news and curated reports"]
-        SavedNews --> NewsCache
-    end
-
-    subgraph Currency["Currency conversion to BDT"]
-        Home --> LoadRates["Load exchange rates"]
-        LoadRates --> Fresh{"Fresh device cache?"}
-        Fresh -->|Yes| Convert["Select amount and currency; convert to BDT"]
-        Fresh -->|No| Primary["ExchangeRate-API v4; USD base; timeout"]
-        Primary -->|Valid and fresh| NormalizeRates["Normalize USD rates to BDT base; cache on device"]
-        Primary -->|Failed, invalid or stale| Fallback["GET /api/exchange-rates: Open Exchange Rates; server-side App ID"]
-        Fallback -->|Valid and fresh| NormalizeRates
-        Fallback -->|Unavailable| CacheCheck{"Saved rates available?"}
-        CacheCheck -->|Yes| Stale["Show saved rates with stale notice"]
-        CacheCheck -->|No| Retry["Error and retry button"]
-        Retry --> LoadRates
-        Stale --> Convert
-        NormalizeRates --> Convert
-        Convert --> Display["BDT result, active provider and Bangladesh-time timestamp"]
-    end
-
-    subgraph TimeWeather["Clock and weather"]
-        ClockPage --> Clocks["Pinned Dhaka; add or remove city clocks; save on device"]
-        Clocks --> TimeZones["Intl time zones: live local time, DST and difference from Dhaka"]
-        ClockPage --> CitySearch["Weather city search; defaults to Dhaka"]
-        CitySearch --> Geocoding["Open-Meteo geocoding: choose matching city"]
-        Geocoding --> Forecast["Open-Meteo forecast: temperature, humidity, wind and three-day highs/lows"]
-        Forecast --> WeatherDisplay["Local weather time and provider attribution"]
-        Forecast -->|Failure| WeatherRetry["Unavailable notice and retry"]
-    end
-
-    subgraph Offline["Offline behavior"]
-        Hosting --> SW["Production service worker precaches matched app assets and bundled JSON"]
-        SW --> Router
-        SW --> Limits["Remote news images, hero PNG and weather are not precached"]
-        SavedNews --> OfflineNews["Previously saved feed text remains available"]
-        Stale --> OfflineRates["Saved currency rates remain available"]
-        Clocks --> OfflineClock["Clock calculation works offline using device time"]
-    end
-
-    subgraph Release["Development and release"]
-        Changes["Code or data changes"] --> Tests["Node regression tests; Python scraper tests when relevant"]
-        Tests --> Build["Vite production build"]
-        Build --> Git["Commit and push to GitHub"]
-        Git --> Deploy["Vercel build; SPA rewrites exclude API routes"]
-        Deploy --> Hosting
-        Secret["Vercel environment: OPEN_EXCHANGE_RATES_APP_ID"] --> Fallback
-        Local["Vite development middleware"] --> NewsAPI
-    end
+    User["Open Protect Probashi"] --> Setup["Choose language and location"]
+    Setup --> Home["Home and services"]
+    Home --> Help["Emergency contacts and embassy directory"]
+    Home --> Rights["Workers' rights guidance"]
+    Home --> News["News feeds and source articles"]
+    Home --> Currency["Currency conversion to BDT"]
+    Home --> Clock["World clock and weather"]
+    Sources["Official sources, RSS feeds and APIs"] --> Help
+    Sources --> News
+    Sources --> Currency
+    Sources --> Clock
+    Updates["Update code or content"] --> Check["Test and build"]
+    Check --> Git["Push to GitHub"]
+    Git --> Deploy["Deploy on Vercel"]
+    Deploy --> User

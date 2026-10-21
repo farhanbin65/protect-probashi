@@ -6,10 +6,9 @@ The project is a React single-page application built with Vite. It can be deploy
 
 ## Features
 
-- One-click language switching, with the selected language displayed first in the bilingual brand.
-- Country and city search in Bangla or English, plus manual selectors. The current location screen does not request GPS permission.
+- One-click language switching
+- Country and city search in Bangla or English, plus manual selectors. 
 - Emergency service numbers for countries with verified data and published embassy contacts.
-- A directory of 82 Bangladesh offices across 60 countries, including embassies, consulates, high commissions and permanent missions.
 - Country filtering and prioritisation of offices matching the selected country and city.
 - Worker-rights pages with links to relevant help sections.
 - News summaries in both languages, publisher-hosted images, photo credits, publication dates and original source links.
@@ -28,42 +27,7 @@ News is maintained manually. There is no scheduled news importer or automatic tr
 
 Currency values are daily reference rates. Bank and remittance-service payouts can differ, and fees or incentives are not included. The app shows the provider's update timestamp rather than assuming every response is current.
 
-## Local setup
 
-Use a Node.js version supported by the installed Vite release; Node.js 22.12 or a newer supported LTS release is suitable.
-
-```bash
-npm ci
-npm run dev
-```
-
-Open the local URL printed by Vite. No API key or environment variables are required for the current implementation.
-
-## Checks and production preview
-
-```bash
-node --test tests/*.test.js
-npm run build
-npm run preview
-```
-
-Tests cover mission normalization and deduplication, verified-record precedence, bilingual location search, news metadata and currency calculations/cache behavior. Legacy geolocation utility tests remain, although GPS detection is no longer exposed in the location UI.
-
-`npm run build` generates `dist/`. The production build includes PWA assets and the service worker. Offline behavior should be checked against a production preview or deployed site, after an initial online visit.
-
-## Application routes
-
-| Route | Purpose |
-| --- | --- |
-| `/` | Home dashboard and currency converter |
-| `/location` | Country and optional city selection |
-| `/emergency` | Selected-country emergency and embassy contacts |
-| `/embassy` | Full mission directory and country filter |
-| `/rights` | Available worker guidance |
-| `/rights/:id` | Individual guidance page |
-| `/news` | News list and filters |
-| `/news/:id` | Summary, image and publisher reference |
-| `/about` | Purpose, limitations, privacy and reporting status |
 
 ## Workflow
 
@@ -71,129 +35,33 @@ The diagram below covers user navigation, content maintenance, currency fetching
 
 ```mermaid
 flowchart TD
-    Visitor["Worker opens Protect Probashi"] --> Hosting["Vercel: Vite app and serverless APIs"]
-    Hosting --> Router["React BrowserRouter"]
-    Router --> Preferences["Bangla or English; saved country and current city"]
-    Preferences --> Shell["Bilingual header, navigation and RSS news ticker"]
-    Shell --> Home["Home: services, news preview and currency"]
-    Home --> Location["Search and select country or city"]
-    Emergency --> Location
-    Location --> Save["Save country on device; set current city"]
-    Save --> Return["Return to requested page; otherwise Home"]
-    Return --> Emergency
-    Return --> Home
-    Home --> Emergency["Emergency: country services and curated embassy contacts"]
-    Home --> Embassy["Embassy: search and country filter; expand office for details and officers"]
-    Home --> Rights["Rights: global and selected-country guidance"]
-    Rights --> RightsDetail["Guidance detail and help links"]
-    Home --> News["News: filters and pagination; 12 cards on large screens, 6 otherwise"]
-    News --> NewsDetail["Original feed headline and excerpt or curated summary; image, time and source"]
-    NewsDetail --> Publisher["Full article on publisher website"]
-    Shell --> About["About: purpose, limitations and privacy"]
-    Home --> ClockPage["Clock and weather; side by side on large screens"]
-
-    subgraph Content["Content maintenance"]
-        Editors["Maintainer checks official sources"] --> Curated["embassies.json: curated contact records"]
-        Editors --> Missions["bd_missions.json: global mission directory"]
-        MissionSync["Mission scraper: discover official sites and contact pages"] --> MissionMerge["Fill missing fields; preserve values; record conflicts and sources"]
-        MissionMerge --> Missions
-        MissionMerge --> Backups["Timestamped backups, previews and reports"]
-        EmergencySync["Emergency scraper: government travel advice for configured countries"] --> Numbers["emergency_numbers.json: sourced numbers and separately marked user additions"]
-        EmergencySync --> Backups
-        Editors --> CountryData["countries.json: curated countries and emergency data"]
-        CountryData --> Countries["Merge countries, mission cities and emergency-only countries"]
-        Missions --> Countries
-        Numbers --> Countries
-        Countries --> Location
-        Countries --> Emergency
-        Curated --> Merge["Normalize missions and deduplicate; curated records take precedence"]
-        Missions --> Merge
-        Countries --> Merge
-        Merge --> Embassy
-        Details["mission_details.json: reviewed optional additions"] --> Embassy
-        Curated --> Emergency
-        Countries --> Embassy
-        Editors --> RightsData["rights.json: currently sample guidance"]
-        RightsData --> Rights
-        RightsData --> RightsDetail
+    Start["User opens Protect Probashi"] --> Lang["Select Language<br/>Bangla or English"]
+    Lang --> Location["Set Country & City"]
+    Location --> Home["Home Page"]
+    
+    Home --> Emergency["Emergency Help<br/>Embassy Contacts"]
+    Home --> Rights["Rights & Guidance"]
+    Home --> News["News Feed"]
+    Home --> Currency["Currency Converter<br/>to BDT"]
+    
+    Emergency --> EmDetail["View Embassy Details<br/>for Selected Country"]
+    Rights --> RightsDetail["Country-Specific<br/>Rights Info"]
+    News --> NewsDetail["Read News Story<br/>& Source Link"]
+    Currency --> Convert["Enter Amount &<br/>Get BDT Result"]
+    
+    subgraph Data["Content"]
+        JSON["embassies.json<br/>rights.json<br/>news.json<br/>countries.json"]
     end
-
-    subgraph NewsFlow["RSS and curated news"]
-        Feeds["Prothom Alo Bangla and English RSS"] --> NewsAPI["GET /api/news: fetch feeds independently; 15-minute server cache"]
-        NewsAPI --> Normalize["Normalize feed excerpts, images and attribution; reject future and older-than-seven-day articles"]
-        Normalize --> NewsCache["useNews: 15-minute device cache; deduplicate and sort"]
-        CuratedNews["news.json: published, nonexpired curated reports"] --> NewsCache
-        NewsCache --> News
-        NewsCache --> NewsDetail
-        NewsCache --> Shell
-        NewsCache --> Home
-        NewsAPI -->|Unavailable| SavedNews["Use saved news and curated reports"]
-        SavedNews --> NewsCache
+    
+    JSON --> Home
+    
+    subgraph Tech["Tech Stack"]
+        React["React + Vite"]
+        Offline["Service Worker<br/>Offline Support"]
     end
-
-    subgraph Currency["Currency conversion to BDT"]
-        Home --> LoadRates["Load exchange rates"]
-        LoadRates --> Fresh{"Fresh device cache?"}
-        Fresh -->|Yes| Convert["Select amount and currency; convert to BDT"]
-        Fresh -->|No| Primary["ExchangeRate-API v4; USD base; timeout"]
-        Primary -->|Valid and fresh| NormalizeRates["Normalize USD rates to BDT base; cache on device"]
-        Primary -->|Failed, invalid or stale| Fallback["GET /api/exchange-rates: Open Exchange Rates; server-side App ID"]
-        Fallback -->|Valid and fresh| NormalizeRates
-        Fallback -->|Unavailable| CacheCheck{"Saved rates available?"}
-        CacheCheck -->|Yes| Stale["Show saved rates with stale notice"]
-        CacheCheck -->|No| Retry["Error and retry button"]
-        Retry --> LoadRates
-        Stale --> Convert
-        NormalizeRates --> Convert
-        Convert --> Display["BDT result, active provider and Bangladesh-time timestamp"]
-    end
-
-    subgraph TimeWeather["Clock and weather"]
-        ClockPage --> Clocks["Pinned Dhaka; add or remove city clocks; save on device"]
-        Clocks --> TimeZones["Intl time zones: live local time, DST and difference from Dhaka"]
-        ClockPage --> CitySearch["Weather city search; defaults to Dhaka"]
-        CitySearch --> Geocoding["Open-Meteo geocoding: choose matching city"]
-        Geocoding --> Forecast["Open-Meteo forecast: temperature, humidity, wind and three-day highs/lows"]
-        Forecast --> WeatherDisplay["Local weather time and provider attribution"]
-        Forecast -->|Failure| WeatherRetry["Unavailable notice and retry"]
-    end
-
-    subgraph Offline["Offline behavior"]
-        Hosting --> SW["Production service worker precaches matched app assets and bundled JSON"]
-        SW --> Router
-        SW --> Limits["Remote news images, hero PNG and weather are not precached"]
-        SavedNews --> OfflineNews["Previously saved feed text remains available"]
-        Stale --> OfflineRates["Saved currency rates remain available"]
-        Clocks --> OfflineClock["Clock calculation works offline using device time"]
-    end
-
-    subgraph Release["Development and release"]
-        Changes["Code or data changes"] --> Tests["Node regression tests; Python scraper tests when relevant"]
-        Tests --> Build["Vite production build"]
-        Build --> Git["Commit and push to GitHub"]
-        Git --> Deploy["Vercel build; SPA rewrites exclude API routes"]
-        Deploy --> Hosting
-        Secret["Vercel environment: OPEN_EXCHANGE_RATES_APP_ID"] --> Fallback
-        Local["Vite development middleware"] --> NewsAPI
-    end
-```
-
-## Project structure
-
-```text
-src/
-  components/        Shared UI, header, ticker and currency converter
-  data/              Country, embassy, mission, rights and news JSON
-  hooks/             Language, country and online-state contexts/hooks
-  i18n/              Bangla and English interface text
-  pages/             Route-level views
-  utils/             Content formatting, mission merge, search and rate loading
-  App.jsx            Providers, layout and routes
-  main.jsx           App entry point and service-worker registration
-tests/               Node regression tests
-docs/workflow.mmd    Mermaid workflow source
-vercel.json          Build settings and SPA routing
-vite.config.js       React and PWA build configuration
+    
+    React --> Home
+    Offline --> Home
 ```
 
 ## Updating content
@@ -238,22 +106,6 @@ There is no account requirement. Language and country preferences, plus cached c
 News images and currency requests contact external providers. The production service worker caches app assets and bundled JSON; it does not guarantee offline availability of publisher images or fresh exchange rates.
 
 The home-page offline action checks whether the production app cache is available. It does not download every remote image or force a rate refresh.
-
-## Deploying to Vercel
-
-Push the repository to GitHub and import it into Vercel. Use these settings:
-
-| Setting | Value |
-| --- | --- |
-| Framework | Vite |
-| Root directory | Directory containing `package.json` |
-| Build command | `npm run build` |
-| Output directory | `dist` |
-| Environment variables | None currently required |
-
-`vercel.json` includes a rewrite to `index.html` so direct visits and refreshes on routes such as `/embassy` work.
-
-After deployment, check direct route refreshes, language switching, location confirmation, source links, currency loading and offline reopening. Subsequent pushes trigger deployments when the repository is connected to the Vercel project.
 
 ## Contribution workflow
 
