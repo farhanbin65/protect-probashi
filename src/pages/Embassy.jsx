@@ -7,17 +7,25 @@ import {
   Globe,
   Copy,
   Check,
+  UserRound,
+  ChevronDown,
   ExternalLink
 } from "lucide-react";
 
 import { useT } from "../hooks/useT";
 import { useCountry } from "../hooks/useCountry";
 
+import details from "../data/mission_details.json";
 import embassies from "../data/embassies.json";
 import countries from "../utils/directoryCountries";
 import { mergeMissions } from "../utils/missions";
 
-const embassyDirectory = mergeMissions(embassies, missionsData, countries);
+const embassyDirectory = mergeMissions(embassies, missionsData, countries).map((mission) => {
+  const extra = details.find((item) => item.id === mission.id);
+  if (!extra) return mission;
+  // Reviewed additions fill gaps; curated contact values always win.
+  return { ...extra, ...Object.fromEntries(Object.entries(mission).filter(([, value]) => value != null && value !== "")), officers: extra.officers || mission.officers || [] };
+});
 
 import {
   localized,
@@ -29,6 +37,12 @@ import {
 import BigButton from "../components/BigButton";
 import PhoneAction from "../components/PhoneAction";
 
+function StaffPhoto({ person }) {
+  const [failed, setFailed] = useState(false);
+  const url = safeUrl(person.imageUrl);
+  return url && !failed ? <img className="staff-photo" src={url} alt="" loading="lazy" onError={() => setFailed(true)} /> : <span className="staff-photo staff-placeholder"><UserRound aria-hidden="true" /></span>;
+}
+
 function EmbassyRecord({ mission, country }) {
   const t = useT();
 
@@ -39,6 +53,8 @@ function EmbassyRecord({ mission, country }) {
   );
 
   const validPhone = isValidPhone(mission.phone);
+  const emergency = mission.countryEmergency?.numbers || country.emergency || {};
+  const emergencySource = mission.countryEmergency?.sourceUrl || country.emergencySourceUrl;
 
   const website = safeUrl(mission.website);
   const sourceUrl = safeUrl(mission.sourceUrl);
@@ -62,7 +78,8 @@ function EmbassyRecord({ mission, country }) {
   }
 
   return (
-    <article className="panel embassy-record">
+    <details className="panel embassy-record">
+      <summary className="embassy-summary">
       <div className="item-heading">
         <Landmark
           size={27}
@@ -74,6 +91,9 @@ function EmbassyRecord({ mission, country }) {
         </h2>
       </div>
 
+      <ChevronDown size={20} aria-hidden="true" />
+      </summary>
+      <div className="embassy-details">
       <p className="muted">
         {t(
           mission.type === "permanentMission"
@@ -134,6 +154,9 @@ function EmbassyRecord({ mission, country }) {
         )}
       </div>
 
+      {mission.jurisdiction && <p>{localized(mission.jurisdiction, t.lang)}</p>}
+      {isValidPhone(mission.whatsapp) && <div className="detail-block"><strong>WhatsApp</strong><p><a href={`https://wa.me/${mission.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer">{mission.whatsapp}</a></p></div>}
+      {mission.additionalEmails?.map((contact) => <div className="detail-block" key={contact.email}><strong>{localized(contact.label, t.lang)}</strong><p className="word-break"><a href={`mailto:${contact.email}`}>{contact.email}</a></p></div>)}
       {mission.hotline && (
         <div className="detail-block">
           <strong>{t("hotline")}</strong>
@@ -195,6 +218,21 @@ function EmbassyRecord({ mission, country }) {
         )}
       </div>
 
+      {(Object.keys(emergency).length > 0 || (!validPhone && !isValidPhone(mission.hotline))) && (
+        <section className="embassy-emergency">
+          <h3>{t("localEmergency")}</h3>
+          <p>{t("localEmergencyNote")}</p>
+          {Object.entries(emergency).filter(([, number]) => isValidPhone(number)).map(([service, number]) => <div key={service}><strong>{t(service)}</strong><PhoneAction number={number} /></div>)}
+          {!Object.values(emergency).some(isValidPhone) && <p>{t("emergencyUnavailable")}</p>}
+          {safeUrl(emergencySource) && <a className="text-link" href={safeUrl(emergencySource)} target="_blank" rel="noopener noreferrer">{t("officialSource")}</a>}
+        </section>
+      )}
+      {!!mission.officers?.length && <section className="embassy-staff"><h3>{t("embassyStaff")}</h3>{mission.officers.map((person, index) => <div className="staff-card" key={index}>
+        <StaffPhoto person={person} /><div><strong>{localized(person.name, t.lang)}</strong><p>{localized(person.designation, t.lang)}</p>
+        {isValidPhone(person.phone) && <PhoneAction number={person.phone} />}
+        {person.email && <p className="word-break"><a href={`mailto:${person.email}`}>{person.email}</a></p>}
+        {safeUrl(person.sourceUrl) && <a href={safeUrl(person.sourceUrl)} target="_blank" rel="noopener noreferrer">{t("officialSource")}</a>}
+        </div></div>)}</section>}
       <div className="embassy-record__footer">
         <p className="metadata">
           {t("lastVerified")}:{" "}
@@ -220,7 +258,8 @@ function EmbassyRecord({ mission, country }) {
           </a>
         )}
       </div>
-    </article>
+      </div>
+    </details>
   );
 }
 
@@ -233,8 +272,13 @@ export default function Embassy() {
   } = useCountry();
 
   const [filterCountry, setFilterCountry] = useState("");
+  const [query, setQuery] = useState("");
   const missions = embassyDirectory
     .filter((item) => !filterCountry || item.countryCode === filterCountry)
+    .filter((item) => {
+      const country = countries.find((entry) => entry.code === item.countryCode);
+      return [item.name.en, item.name.bn, item.city, country?.name.en, country?.name.bn].join(" ").toLocaleLowerCase().includes(query.trim().toLocaleLowerCase());
+    })
     .sort((a, b) =>
       Number(b.countryCode === countryCode) - Number(a.countryCode === countryCode) ||
       Number(b.city === cityId) - Number(a.city === cityId)
@@ -259,11 +303,13 @@ export default function Embassy() {
         {t("jurisdictionNote")}
       </p>
 
-      <label htmlFor="embassy-country">{t("country")}</label>
+      <div className="embassy-filters">
+      <div><label htmlFor="embassy-search">{t("searchEmbassies")}</label><input id="embassy-search" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={t("searchEmbassiesHint")} /></div>
+      <div><label htmlFor="embassy-country">{t("country")}</label>
       <select id="embassy-country" value={filterCountry} onChange={(event) => setFilterCountry(event.target.value)}>
         <option value="">{t("allCountries")}</option>
         {countries.map((item) => <option key={item.code} value={item.code}>{localized(item.name, t.lang)}</option>)}
-      </select>
+      </select></div></div>
 
       <div className="embassy-grid">
         {missions.length === 0 ? (

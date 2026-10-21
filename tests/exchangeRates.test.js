@@ -29,3 +29,47 @@ test('offline cached rates are clearly marked stale; fresh cache avoids network'
     else delete globalThis.localStorage;
   }
 });
+
+test('primary failure uses USD-based fallback and converts correctly to BDT', async () => {
+  const fetchBefore = globalThis.fetch;
+  const storageBefore = Object.getOwnPropertyDescriptor(globalThis, 'localStorage');
+  const calls = [];
+  Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: { getItem: () => null, setItem() {} } });
+  globalThis.fetch = async (url) => {
+    calls.push(url);
+    if (calls.length === 1) return { ok: false };
+    return { ok: true, json: async () => ({ base: 'USD', timestamp: Math.floor(Date.now()/1000), rates: { USD: 1, BDT: 120, GBP: 0.8 } }) };
+  };
+  try {
+    const result = await loadExchangeRates();
+    assert.equal(result.data.provider, 'openexchangerates');
+    assert.equal(result.stale, false);
+    assert.equal(toBDT(10, result.data.rates.GBP), 1500);
+    assert.deepEqual(calls, ['https://api.exchangerate-api.com/v4/latest/USD', '/api/exchange-rates']);
+  } finally {
+    globalThis.fetch = fetchBefore;
+    if (storageBefore) Object.defineProperty(globalThis, 'localStorage', storageBefore);
+    else delete globalThis.localStorage;
+  }
+});
+
+test('valid primary response does not request fallback', async () => {
+  const fetchBefore = globalThis.fetch;
+  const storageBefore = Object.getOwnPropertyDescriptor(globalThis, 'localStorage');
+  let calls = 0;
+  Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: { getItem: () => null, setItem() {} } });
+  globalThis.fetch = async () => {
+    calls++;
+    return { ok: true, json: async () => ({ base: 'USD', time_last_updated: Math.floor(Date.now()/1000), rates: { USD: 1, BDT: 120 } }) };
+  };
+  try {
+    const result = await loadExchangeRates();
+    assert.equal(result.data.provider, 'exchangerate-api');
+    assert.equal(calls, 1);
+    assert.equal(toBDT(1, result.data.rates.USD), 120);
+  } finally {
+    globalThis.fetch = fetchBefore;
+    if (storageBefore) Object.defineProperty(globalThis, 'localStorage', storageBefore);
+    else delete globalThis.localStorage;
+  }
+});

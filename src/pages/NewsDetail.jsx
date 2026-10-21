@@ -1,3 +1,4 @@
+import { useNews } from "../hooks/useNews";
 import NewsImage from "../components/NewsImage";
 import { Link, useParams } from "react-router-dom";
 
@@ -20,10 +21,13 @@ export default function NewsDetail() {
   const { id } = useParams();
 
   const t = useT();
+  const { articles: feedArticles, loading: newsLoading, unavailable: newsUnavailable } = useNews();
 
-  const article = getPublishedNews().find(
+  const article = feedArticles.find(
     (item) => item.id === id
   );
+
+  if (!article && newsLoading) return <div className="page" role="status">{t("loading")}</div>;
 
   if (!article) {
     return (

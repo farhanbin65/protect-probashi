@@ -1,0 +1,13 @@
+[
+  {
+    "id": "bd-dz-algiers-embassy",
+    "fetchedAt": "2026-10-21T10:32:30.613173+00:00",
+    "pages": [],
+    "errors": [
+      {
+        "url": "https://algiers.mofa.gov.bd/pages/officers-profile",
+        "error": "HTTPSConnectionPool(host='algiers.mofa.gov.bd', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1127)')))"
+      }
+    ]
+  }
+]

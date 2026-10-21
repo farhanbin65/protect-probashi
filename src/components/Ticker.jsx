@@ -16,8 +16,11 @@ import {
   matchesCountry
 } from "../utils/content";
 
+import { useNews } from "../hooks/useNews";
+
 export default function Ticker() {
   const t = useT();
+  const { articles } = useNews();
   const { countryCode } = useCountry();
 
   const groupRef = useRef(null);
@@ -32,10 +35,10 @@ export default function Ticker() {
     useState(30);
 
   const items = useMemo(() => {
-    return getPublishedNews().filter(
+    return articles.filter(
       (item) => matchesCountry(item, countryCode)
     );
-  }, [countryCode]);
+  }, [countryCode, articles]);
 
   useEffect(() => {
     function onVisibilityChange() {

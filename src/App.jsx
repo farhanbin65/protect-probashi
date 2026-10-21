@@ -17,6 +17,7 @@ import MobileNav from "./components/MobileNav";
 import Ticker from "./components/Ticker";
 import OfflineBanner from "./components/OfflineBanner";
 
+const WorldClockPage = lazy(() => import("./pages/WorldClockPage"));
 const Home = lazy(() => import("./pages/Home"));
 const Location = lazy(() => import("./pages/Location"));
 const Emergency = lazy(() => import("./pages/Emergency"));
@@ -53,6 +54,7 @@ function Layout() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/world-clock" element={<WorldClockPage />} />
 
             <Route
               path="/location"

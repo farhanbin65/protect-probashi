@@ -1,0 +1,1214 @@
+{
+  "GB": {
+    "numbers": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    },
+    "sourceUrl": "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers",
+    "lastVerified": "2026-10-21"
+  },
+  "US": {
+    "numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "sourceUrl": "https://www.911.gov/calling-911/",
+    "lastVerified": "2026-10-21"
+  },
+  "SA": {
+    "numbers": {
+      "police": "999",
+      "ambulance": "997",
+      "fire": "998"
+    },
+    "sourceUrl": "https://my.gov.sa/en/emergency-contact",
+    "lastVerified": "2026-10-19"
+  },
+  "AE": {
+    "numbers": {
+      "police": "999",
+      "ambulance": "998",
+      "fire": "997"
+    },
+    "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+    "lastVerified": "2026-10-19"
+  },
+  "QA": {
+    "numbers": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    },
+    "sourceUrl": "https://portal.moi.gov.qa/UNCCPCJDoha/English/Emergency_Services.html",
+    "lastVerified": "2026-10-19"
+  },
+  "DZ": {
+    "numbers": {
+      "ambulance": "1021",
+      "fire": "14",
+      "police": "17"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:11.099462+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": [
+        "1548"
+      ]
+    },
+    "sourceExcerpt": "Ambulance: 1021\nFire: 14\nPolice: 17 or 1548",
+    "verification": "automatically-extracted"
+  },
+  "AU": {
+    "numbers": {
+      "police": "000",
+      "ambulance": "000",
+      "fire": "000"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/australia/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/australia/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/australia/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/australia/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:12.666506+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 000 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "AT": {
+    "numbers": {
+      "fire": "122",
+      "police": "133",
+      "ambulance": "144"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/austria/getting-help",
+    "fieldSources": {
+      "fire": "https://www.gov.uk/foreign-travel-advice/austria/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/austria/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/austria/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:14.246079+00:00",
+    "alternatives": {
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance or rescue: 144\nFire: 122\nPolice: 133\nEuropean emergency number: 112\nYou can also download the\n112 Where Are U app\n, the European emergency number app.",
+    "verification": "automatically-extracted"
+  },
+  "BH": {
+    "numbers": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:15.807978+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 999 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "BE": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/belgium/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/belgium/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/belgium/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/belgium/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:17.388532+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)\nDownload the\n112 BE app\n, the official Belgian emergency app for ambulance, fire and police services. This allows you to contact emergency services directly and helps responders identify your location and personal details.",
+    "verification": "automatically-extracted"
+  },
+  "BT": {
+    "numbers": {
+      "ambulance": "112",
+      "fire": "110",
+      "police": "113"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:18.952835+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 112\nFire: 110\nPolice: 113",
+    "verification": "automatically-extracted"
+  },
+  "BR": {
+    "numbers": {
+      "ambulance": "192",
+      "fire": "193",
+      "police": "190"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/brazil/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/brazil/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/brazil/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/brazil/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:20.535588+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": [
+        "911"
+      ]
+    },
+    "sourceExcerpt": "Ambulance: 192\nFire: 193\nPolice: 190 or 911",
+    "verification": "automatically-extracted"
+  },
+  "BN": {
+    "numbers": {
+      "ambulance": "991",
+      "fire": "995",
+      "police": "993"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/brunei/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/brunei/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/brunei/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/brunei/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:22.111420+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 991\nFire: 995\nPolice: 993\nSearch and rescue: 998",
+    "verification": "automatically-extracted"
+  },
+  "CA": {
+    "numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/canada/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/canada/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/canada/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/canada/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:23.691164+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 911 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "CN": {
+    "numbers": {
+      "ambulance": "120",
+      "fire": "119",
+      "police": "110"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/china/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/china/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/china/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/china/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:25.263817+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 120\nFire: 119\nPolice: 110\nTraffic Police: 122\nMaritime Search and Rescue Centre: 12395",
+    "verification": "automatically-extracted"
+  },
+  "DK": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/denmark/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/denmark/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/denmark/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/denmark/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:26.829407+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police).",
+    "verification": "automatically-extracted"
+  },
+  "EG": {
+    "numbers": {
+      "ambulance": "123",
+      "fire": "180",
+      "police": "122"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:28.405742+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 123\nFire: 180\nPolice: 122\nTourist police: 126",
+    "verification": "automatically-extracted"
+  },
+  "FR": {
+    "numbers": {
+      "ambulance": "15",
+      "fire": "18",
+      "police": "17"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/france/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/france/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/france/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/france/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:31.547916+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Telephone 112 (ambulance, fire, police)\nAmbulance: 15\nFire: 18\nPolice: 17\nDeaf and hard of hearing emergency number (SMS, chat, video and fax): 114",
+    "verification": "automatically-extracted"
+  },
+  "DE": {
+    "numbers": {
+      "ambulance": "112",
+      "fire": "112",
+      "police": "110"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/germany/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/germany/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/germany/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/germany/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:33.116761+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 112\nFire: 112\nPolice: 110",
+    "verification": "automatically-extracted"
+  },
+  "GR": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/greece/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/greece/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/greece/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/greece/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:34.704381+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)\nCalling 999 from a UK mobile in Greece will automatically transfer you to the Greek emergency services.",
+    "verification": "automatically-extracted"
+  },
+  "IN": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/india/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/india/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/india/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/india/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:36.279727+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)\nThese services provide support in English, Hindi and additional languages.\nYou can also download the\n112 India mobile app\nwhich can track your location to support response in an emergency.\nFurther helpline numbers are available on the\nNational Portal of India.",
+    "verification": "automatically-extracted"
+  },
+  "ID": {
+    "numbers": {
+      "ambulance": "118",
+      "fire": "112",
+      "police": "110"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:37.841356+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 118\nFire: 112\nPolice: 110",
+    "verification": "automatically-extracted"
+  },
+  "IR": {
+    "numbers": {
+      "ambulance": "115",
+      "fire": "125",
+      "police": "110"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/iran/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/iran/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/iran/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/iran/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:39.411096+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 115\nFire: 125\nPolice: 110",
+    "verification": "automatically-extracted"
+  },
+  "IQ": {
+    "numbers": {
+      "ambulance": "122",
+      "fire": "115",
+      "police": "911"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/iraq/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/iraq/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/iraq/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/iraq/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:40.979439+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 122\nFire: 115\nPolice: 911",
+    "verification": "automatically-extracted"
+  },
+  "IT": {
+    "numbers": {
+      "ambulance": "118",
+      "fire": "115",
+      "police": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/italy/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/italy/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/italy/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/italy/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:42.567102+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 118\nFire: 115\nPolice: 112",
+    "verification": "automatically-extracted"
+  },
+  "JP": {
+    "numbers": {
+      "ambulance": "119",
+      "fire": "119",
+      "police": "110"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/japan/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/japan/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/japan/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/japan/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:44.148935+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 119\nFire: 119\nPolice: 110",
+    "verification": "automatically-extracted"
+  },
+  "JO": {
+    "numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:45.722314+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 911 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "KE": {
+    "numbers": {
+      "police": "999",
+      "ambulance": "999",
+      "fire": "999"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:47.290228+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 999 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "KR": {
+    "numbers": {
+      "ambulance": "119",
+      "fire": "119",
+      "police": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:48.856430+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 119\nFire: 119\nPolice: 112",
+    "verification": "automatically-extracted"
+  },
+  "KW": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/kuwait/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/kuwait/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/kuwait/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/kuwait/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:50.416198+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "LB": {
+    "numbers": {
+      "ambulance": "140",
+      "fire": "175",
+      "police": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/lebanon/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/lebanon/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/lebanon/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/lebanon/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:51.987708+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 140\nFire: 175\nPolice: 112",
+    "verification": "automatically-extracted"
+  },
+  "LY": {
+    "numbers": {
+      "police": "1415",
+      "ambulance": "1415",
+      "fire": "1415"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/libya/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/libya/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/libya/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/libya/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:53.561761+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 1415 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "MY": {
+    "numbers": {
+      "fire": "994",
+      "police": "999",
+      "ambulance": "999"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/malaysia/getting-help",
+    "fieldSources": {
+      "fire": "https://www.gov.uk/foreign-travel-advice/malaysia/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/malaysia/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/malaysia/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:55.134615+00:00",
+    "alternatives": {
+      "fire": []
+    },
+    "sourceExcerpt": "Police and ambulance: 999\nFire: 994\nAmbulance (from a mobile): 112",
+    "verification": "automatically-extracted"
+  },
+  "MU": {
+    "numbers": {
+      "ambulance": "999",
+      "fire": "999",
+      "police": "999"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:56.710084+00:00",
+    "alternatives": {
+      "ambulance": [
+        "114"
+      ],
+      "fire": [
+        "115"
+      ],
+      "police": [
+        "112"
+      ]
+    },
+    "sourceExcerpt": "Ambulance: 999 or 114\nFire: 999 or 115\nPolice: 999 or 112",
+    "verification": "automatically-extracted"
+  },
+  "MX": {
+    "numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/mexico/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/mexico/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/mexico/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/mexico/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:58.283772+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 911 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "MA": {
+    "numbers": {
+      "ambulance": "150",
+      "fire": "150",
+      "police": "190"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:00:59.853866+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 150\nFire: 150\nPolice: 190\nGendarmerie (military police): 177",
+    "verification": "automatically-extracted"
+  },
+  "MM": {
+    "numbers": {
+      "ambulance": "192",
+      "fire": "191",
+      "police": "199"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/myanmar/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/myanmar/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/myanmar/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/myanmar/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:01.428122+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 192\nFire: 191\nPolice: 199",
+    "verification": "automatically-extracted"
+  },
+  "NP": {
+    "numbers": {
+      "police": "100",
+      "fire": "101",
+      "ambulance": "102"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:03.001584+00:00",
+    "alternatives": {
+      "police": [],
+      "fire": [],
+      "ambulance": []
+    },
+    "sourceExcerpt": "Police: 100\nTourist police\n(good English language skills): 1144\nFire: 101\nAmbulance: 102",
+    "verification": "automatically-extracted"
+  },
+  "NG": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/nigeria/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/nigeria/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/nigeria/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/nigeria/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:04.567789+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)\nThere is no national ambulance service and hospital-owned services are extremely limited. You may need to get local advice or arrange local transport.",
+    "verification": "automatically-extracted"
+  },
+  "OM": {
+    "numbers": {
+      "police": "9999",
+      "ambulance": "9999",
+      "fire": "9999"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/oman/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/oman/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/oman/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/oman/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:06.148108+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 9999 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "PK": {
+    "numbers": {
+      "police": "15",
+      "ambulance": "1122",
+      "fire": "1122"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:07.721072+00:00",
+    "alternatives": {
+      "police": []
+    },
+    "sourceExcerpt": "Telephone: 1122 (ambulance, fire)\nPolice: 15",
+    "verification": "automatically-extracted"
+  },
+  "PL": {
+    "numbers": {
+      "ambulance": "999",
+      "fire": "998",
+      "police": "997"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/poland/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/poland/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/poland/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/poland/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:09.305944+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 999\nFire: 998\nPolice: 997",
+    "verification": "automatically-extracted"
+  },
+  "PT": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/portugal/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/portugal/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/portugal/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/portugal/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:10.869517+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "TR": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/turkey/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/turkey/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/turkey/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/turkey/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:12.434924+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "RO": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/romania/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/romania/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/romania/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/romania/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:14.024331+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "RU": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/russia/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/russia/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/russia/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/russia/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:15.589411+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "SG": {
+    "numbers": {
+      "police": "999",
+      "ambulance": "995",
+      "fire": "995"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/singapore/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/singapore/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/singapore/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/singapore/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:17.179337+00:00",
+    "alternatives": {
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance and fire: 995\nPolice: 999",
+    "verification": "automatically-extracted"
+  },
+  "ZA": {
+    "numbers": {
+      "police": "10111",
+      "ambulance": "10177",
+      "fire": "10177"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:18.783183+00:00",
+    "alternatives": {
+      "police": []
+    },
+    "sourceExcerpt": "All emergencies from mobiles: 112\nAmbulance and fire: 10177\nPolice: 10111\nNational Sea and Rescue Institute: 112 or +27 87 094 9774\nWilderness Search and Rescue: +27 21 937 0300\nThere may be other regional emergency numbers available, check locally.",
+    "verification": "automatically-extracted"
+  },
+  "ES": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/spain/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/spain/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/spain/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/spain/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:20.346541+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "LK": {
+    "numbers": {
+      "police": "118",
+      "ambulance": "0112691111",
+      "fire": "111"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:21.921063+00:00",
+    "alternatives": {
+      "police": [
+        "119"
+      ]
+    },
+    "sourceExcerpt": "Ambulance: 011 2691111 or 1990\nFire and Rescue: 111\nPolice: 118/119\nEmergency Police Mobile Squad: 011 5717171\nTourist Police: 011 2421052",
+    "verification": "automatically-extracted"
+  },
+  "SE": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/sweden/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/sweden/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/sweden/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/sweden/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:23.470378+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "CH": {
+    "numbers": {
+      "ambulance": "144",
+      "fire": "118",
+      "police": "117"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/switzerland/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/switzerland/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/switzerland/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/switzerland/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:25.032858+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)\nAmbulance: 144\nFire: 118\nPolice: 117",
+    "verification": "automatically-extracted"
+  },
+  "TH": {
+    "numbers": {
+      "ambulance": "1669",
+      "fire": "199",
+      "police": "191"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:26.595806+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Telephone: 191 (ambulance, fire, police)\nAmbulance: 1669\nFire: 199\nPolice: 191\nTourist police: 1155\nThe Tourist Police have developed a new application called Thailand Tourist Police to facilitate communication between tourists and our services online. The application is available to tourists who do not have a Thai SIM card. The application features information about tourist attractions and notifications regarding natural disasters or safety concerns in the vicinity of tourists.",
+    "verification": "automatically-extracted"
+  },
+  "MV": {
+    "numbers": {
+      "ambulance": "102",
+      "fire": "118",
+      "police": "119"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/maldives/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/maldives/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/maldives/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/maldives/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:28.172957+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 102\nFire: 118\nPolice: 119",
+    "verification": "automatically-extracted"
+  },
+  "NL": {
+    "numbers": {
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/netherlands/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/netherlands/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/netherlands/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/netherlands/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:29.739463+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 112 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "PH": {
+    "numbers": {
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/philippines/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/philippines/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/philippines/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/philippines/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:31.309673+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 911 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "UZ": {
+    "numbers": {
+      "ambulance": "103",
+      "fire": "101",
+      "police": "102"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:34.475335+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 103\nFire: 101\nPolice: 102\nA new unified emergency services number, 112, was introduced in 2024 to cover all emergency calls. The previous emergency numbers are still in operation.\nUzbekistan also has a 24/7 tourist hotline, the “Call Centre for Safe Tourism”, on 1173, whose operators speak English as well as Uzbek and Russian, and can direct callers to locally available support.",
+    "verification": "automatically-extracted"
+  },
+  "VN": {
+    "numbers": {
+      "ambulance": "115",
+      "fire": "114",
+      "police": "113"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
+    "fieldSources": {
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help",
+      "police": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:36.040028+00:00",
+    "alternatives": {
+      "ambulance": [],
+      "fire": [],
+      "police": []
+    },
+    "sourceExcerpt": "Ambulance: 115\nFire: 114\nPolice: 113\nNational search and rescue: 112\nHotline for child protection: 111\nEmergency numbers in Vietnam are operated in Vietnamese only.\nTake a translator with you when you report a crime to the local police. Always get a police report when you report a crime.",
+    "verification": "automatically-extracted"
+  },
+  "NZ": {
+    "numbers": {
+      "police": "111",
+      "ambulance": "111",
+      "fire": "111"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/new-zealand/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/new-zealand/getting-help",
+      "ambulance": "https://www.gov.uk/foreign-travel-advice/new-zealand/getting-help",
+      "fire": "https://www.gov.uk/foreign-travel-advice/new-zealand/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:01:37.600324+00:00",
+    "alternatives": {},
+    "sourceExcerpt": "Telephone: 111 (ambulance, fire, police)",
+    "verification": "automatically-extracted"
+  },
+  "ET": {
+    "numbers": {
+      "police": "911"
+    },
+    "sourceUrl": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help",
+    "fieldSources": {
+      "police": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help"
+    },
+    "fetchedAt": "2026-10-21T11:02:12.209551+00:00",
+    "alternatives": {
+      "police": []
+    },
+    "sourceExcerpt": "Police and emergency: 911\nAmbulance (Addis Ababa): 907",
+    "verification": "automatically-extracted"
+  },
+  "AR": {
+    "name": {
+      "en": "Argentina",
+      "bn": "আর্জেন্টিনা"
+    },
+    "numbers": {
+      "police": "911",
+      "fire": "100",
+      "ambulance": "107"
+    },
+    "sourceType": "user-provided",
+    "sourceNote": "Emergency telephone numbers table supplied by the user",
+    "verification": "unverified"
+  },
+  "CO": {
+    "name": {
+      "en": "Colombia",
+      "bn": "কলম্বিয়া"
+    },
+    "numbers": {
+      "police": "123",
+      "fire": "123",
+      "ambulance": "123"
+    },
+    "sourceType": "user-provided",
+    "sourceNote": "Emergency telephone numbers table supplied by the user",
+    "verification": "unverified"
+  },
+  "FI": {
+    "name": {
+      "en": "Finland",
+      "bn": "ফিনল্যান্ড"
+    },
+    "numbers": {
+      "police": "112",
+      "fire": "112",
+      "ambulance": "112"
+    },
+    "sourceType": "user-provided",
+    "sourceNote": "Emergency telephone numbers table supplied by the user",
+    "verification": "unverified"
+  },
+  "IE": {
+    "name": {
+      "en": "Ireland",
+      "bn": "আয়ারল্যান্ড"
+    },
+    "numbers": {
+      "police": "112",
+      "fire": "112",
+      "ambulance": "112"
+    },
+    "sourceType": "user-provided",
+    "sourceNote": "Emergency telephone numbers table supplied by the user",
+    "verification": "unverified",
+    "alternatives": {
+      "police": [
+        "999"
+      ],
+      "fire": [
+        "999"
+      ],
+      "ambulance": [
+        "999"
+      ]
+    }
+  },
+  "IL": {
+    "name": {
+      "en": "Israel",
+      "bn": "ইসরায়েল"
+    },
+    "numbers": {
+      "police": "100",
+      "fire": "102",
+      "ambulance": "101"
+    },
+    "sourceType": "user-provided",
+    "sourceNote": "Emergency telephone numbers table supplied by the user",
+    "verification": "unverified"
+  },
+  "NO": {
+    "name": {
+      "en": "Norway",
+      "bn": "নরওয়ে"
+    },
+    "numbers": {
+      "police": "112",
+      "fire": "110",
+      "ambulance": "113"
+    },
+    "sourceType": "user-provided",
+    "sourceNote": "Emergency telephone numbers table supplied by the user",
+    "verification": "unverified"
+  },
+  "VE": {
+    "name": {
+      "en": "Venezuela",
+      "bn": "ভেনেজুয়েলা"
+    },
+    "numbers": {
+      "police": "911",
+      "fire": "171",
+      "ambulance": "171"
+    },
+    "sourceType": "user-provided",
+    "sourceNote": "Emergency telephone numbers table supplied by the user",
+    "verification": "unverified"
+  }
+}

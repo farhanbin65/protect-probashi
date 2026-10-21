@@ -13,7 +13,7 @@ export function localized(value, lang = "bn") {
 export function formatDate(value, lang = "bn") {
   if (!value) return "";
 
-  const date = new Date(`${value}T12:00:00Z`);
+  const date = new Date(value.includes("T") ? value : `${value}T12:00:00Z`);
 
   if (Number.isNaN(date.getTime())) {
     return "";
@@ -25,6 +25,7 @@ export function formatDate(value, lang = "bn") {
       day: "numeric",
       month: "short",
       year: "numeric",
+      ...(value.includes("T") ? { hour: "2-digit", minute: "2-digit" } : {}),
       timeZone: "UTC"
     }
   ).format(date);
@@ -48,7 +49,7 @@ export function isValidPhone(phone) {
   const domestic = /^0\d{7,13}$/;
 
   // Emergency short code.
-  const shortCode = /^\d{3,6}$/;
+  const shortCode = /^\d{2,6}$/;
 
   return (
     international.test(value) ||

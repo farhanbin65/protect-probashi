@@ -1,6 +1,8 @@
 import supportedCountries from "../data/countries.json" with { type: "json" };
 import missions from "../data/bd_missions.json" with { type: "json" };
 
+import emergencyNumbers from "../data/emergency_numbers.json" with { type: "json" };
+
 const codes = {
   Algeria: "DZ", Australia: "AU", Austria: "AT", Bahrain: "BH", Belgium: "BE",
   Bhutan: "BT", Brazil: "BR", Brunei: "BN", Canada: "CA", China: "CN",
@@ -29,6 +31,21 @@ for (const mission of missions) {
   const id = citySlug(mission.city);
   if (!country.cities.some((city) => city.id === id)) {
     country.cities.push({ id, name: { en: mission.city, bn: mission.city } });
+  }
+}
+// Emergency coverage can include countries with no embassy record yet.
+for (const [code, emergency] of Object.entries(emergencyNumbers)) {
+  if (!countries.some((country) => country.code === code) && emergency.name) {
+    countries.push({ code, name: emergency.name, emergency: {}, cities: [] });
+  }
+}
+for (const country of countries) {
+  const emergency = emergencyNumbers[country.code];
+  if (emergency) {
+    country.emergency = emergency.numbers;
+    country.emergencySourceUrl = emergency.sourceUrl;
+    country.emergencyLastVerified = emergency.lastVerified;
+    country.emergencyFetchedAt = emergency.fetchedAt;
   }
 }
 export default countries;

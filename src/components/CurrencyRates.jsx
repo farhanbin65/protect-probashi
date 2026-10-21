@@ -46,7 +46,7 @@ export default function CurrencyRates() {
         <p className="metadata">{t("currencyUpdated")}: {new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Dhaka" }).format(new Date(result.data.time_last_update_unix * 1000))} ({t("currencyDhaka")})</p>
       </>}
       <p className="metadata">{t("currencyNote")}</p>
-      <a className="text-link metadata" href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer">Rates By Exchange Rate API</a>
+      <a className="text-link metadata" href={result?.data.provider === "openexchangerates" ? "https://openexchangerates.org" : "https://www.exchangerate-api.com"} target="_blank" rel="noopener noreferrer">{result?.data.provider === "openexchangerates" ? "Rates by Open Exchange Rates" : "Rates by ExchangeRate-API"}</a>
     </section>
   );
 }

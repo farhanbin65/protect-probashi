@@ -1,3 +1,4 @@
+import { useNews } from "../hooks/useNews";
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
@@ -12,6 +13,7 @@ import {
   Search,
   ChevronRight,
   Globe2,
+  Clock,
   HeartHandshake
 } from "lucide-react";
 
@@ -30,6 +32,7 @@ import NewsImage from "../components/NewsImage";
 
 export default function Home() {
   const t = useT();
+  const { articles: feedArticles, loading: newsLoading, unavailable: newsUnavailable } = useNews();
 
   const {
     country,
@@ -42,6 +45,7 @@ export default function Home() {
 
   const [search, setSearch] = useState("");
   const services = [
+    { to: "/world-clock", key: "worldClock", description: "worldClockIntro", icon: Clock, color: "amber" },
     { to: "/embassy", key: "embassy", description: "embassyIntro", icon: Landmark, color: "green" },
     { to: "/rights", key: "rights", description: "rightsIntro", icon: Scale, color: "blue" },
     { to: "/location", key: "chooseLocation", description: "locationIntro", icon: MapPin, color: "amber" },
@@ -50,7 +54,7 @@ export default function Home() {
   const filteredServices = services.filter((item) =>
     (t(item.key) + " " + t(item.description)).toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())
   );
-  const latestNews = getPublishedNews()
+  const latestNews = feedArticles
     .filter((item) =>
       matchesCountry(item, countryCode)
     )

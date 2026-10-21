@@ -9,7 +9,7 @@
   "searchLocation": "Search location",
   "searchLocationPlaceholder": "Search country or city",
   "locationSearchNote": "Search in English or Bangla, then confirm your selection. No location permission needed.",
-  "newsSummaryNote": "Short summaries of published reports. Read the original source for the full story and any updates.",
+  "newsSummaryNote": "Publisher feed excerpts and curated summaries. Follow the source link for the full article.",
   "brand": "Protect Probashi",
   "tagline": "Help and information for Bangladeshis abroad",
   "skipContent": "Skip to main content",
@@ -132,5 +132,15 @@
   "quickHelp": "Quick help",
   "currencyShort": "Exchange rate",
   "hereToHelp": "Here to help",
-  "supportIntro": "Our purpose, privacy and information."
+  "supportIntro": "Our purpose, privacy and information.",
+  "searchEmbassies": "Search embassies",
+  "searchEmbassiesHint": "Embassy, city or country",
+  "localEmergency": "Local emergency services",
+  "localEmergencyNote": "These are local emergency services, not embassy or passport assistance.",
+  "emergencyUnavailable": "No verified local emergency number is available in this directory.",
+  "embassyStaff": "Embassy officials",
+  "sourceRetrieved": "Source retrieved",
+  "worldClock": "World clock",
+  "worldClockIntro": "Compare your local time with Dhaka.",
+  "newsFeedUnavailable": "Live feeds are unavailable. Showing saved news."
 }

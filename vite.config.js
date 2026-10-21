@@ -1,10 +1,18 @@
 import { defineConfig } from "vite";
+import newsHandler from "./api/news.js";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   plugins: [
     react(),
+    { name: 'local-news-api', configureServer(server) {
+      server.middlewares.use('/api/news', (req, res) => {
+        res.status = code => { res.statusCode = code; return res; };
+        res.json = body => { res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify(body)); };
+        return newsHandler(req, res);
+      });
+    } },
 
     VitePWA({
       registerType: "autoUpdate",

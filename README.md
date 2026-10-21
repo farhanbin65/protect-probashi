@@ -237,3 +237,17 @@ git push origin main
 ```
 
 For application changes, stage the relevant source and test files as well. Dependencies, generated builds, virtual environments, logs, local Vercel settings and environment secrets are excluded by `.gitignore`.
+
+### Currency providers
+
+ExchangeRate-API v4 (USD base) is the default. If it fails, returns invalid data, or returns stale rates, the app tries Open Exchange Rates through `/api/exchange-rates`. Both responses are converted to the app's BDT-based format. If both fail, cached rates remain available with a stale notice.
+
+Set `OPEN_EXCHANGE_RATES_APP_ID` in Vercel's environment variables and redeploy to enable the fallback. Keep it server-side; do not prefix it with `VITE_`. No key is needed for the default provider. The fallback uses USD base so it works with the Open Exchange Rates free plan. Browser results are cached for up to a day; the fallback endpoint has a one-hour shared cache.
+
+For local fallback testing, use `vercel dev` with the environment variable configured. Plain `npm run dev` serves the frontend and default provider but does not run Vercel API functions.
+
+### RSS news
+
+`/api/news` reads Prothom Alo's Bangla and English RSS feeds. The home cards, news pages and ticker share the results. Original headlines, publisher-provided feed excerpts, available media images, source links and publication timestamps are retained; full linked articles are not scraped or translated. Only articles from the last seven days are imported. Feeds refresh on requests after a 15-minute cache expires. Browser storage provides saved news when offline, with curated articles as a further fallback.
+
+The API works on Vercel and through the included Vite development middleware. No API key or scheduled job is required. Configure publishers in `api/news.js`; unavailable images are hidden, and feed failures do not remove curated news.

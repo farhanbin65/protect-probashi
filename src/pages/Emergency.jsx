@@ -40,7 +40,7 @@ export default function Emergency() {
         <p>{t("selectFirst")}</p>
 
         <BigButton
-          to="/location"
+          to="/location?returnTo=/emergency"
           icon={MapPin}
           label={t("chooseLocation")}
         />
@@ -95,6 +95,8 @@ export default function Emergency() {
         {localized(country.name, t.lang)}
       </p>
 
+      <BigButton to="/location?returnTo=/emergency" icon={MapPin} label={t("chooseLocation")} variant="outline" />
+
       <p className="disclaimer">
         <Info size={22} aria-hidden="true" />
 
@@ -128,9 +130,9 @@ export default function Emergency() {
                 />
 
                 <p className="metadata">
-                  {t("lastVerified")}:{" "}
+                  {t(country.emergencyLastVerified ? "lastVerified" : "sourceRetrieved")}:{" "}
                   {formatDate(
-                    country.emergencyLastVerified,
+                    country.emergencyLastVerified || country.emergencyFetchedAt?.slice(0, 10),
                     t.lang
                   ) || t("unverified")}
                 </p>

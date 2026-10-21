@@ -5,13 +5,58 @@
     "city": "Algiers",
     "location": "Algeria (Algiers)",
     "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "phone": "+213552181818",
+    "email": "mission.algiers@mofa.gov.bd",
+    "website": "https://algiers.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [
+      {
+        "sourceUrl": "https://algiers.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-algiers-mofa/2024/12/fc923097b2bd4a36854de754802a7ecf.jpeg",
+        "name": "H.E. Md. Najmul Huda",
+        "designation": "Ambassador",
+        "email": "mission.algiers@mofa.gov.bd",
+        "phone": "+213552181818",
+        "phoneAsPublished": "+213 (0) 552181818"
+      },
+      {
+        "sourceUrl": "https://algiers.mofa.gov.bd/pages/officers-profile",
+        "name": "Kakoli Saha",
+        "designation": "Counsellor",
+        "email": "mission.algiers@mofa.gov.bd",
+        "phone": "023053001",
+        "phoneAsPublished": "023.05.30.01",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://algiers.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-algiers-mofa/2024/12/58a5bdb93a3444808ea6961045e7af15.jpg",
+        "name": "MD. AHADUR RAHMAN",
+        "designation": "Administrative Officer (Accounts)",
+        "email": "mission.algiers@mofa.gov.bd",
+        "phone": "+213552181818",
+        "phoneAsPublished": "+213 (0) 552181818"
+      }
+    ],
+    "countryEmergency": {
+      "numbers": {
+        "police": "17",
+        "ambulance": "1021",
+        "fire": "14"
+      },
+      "sourceUrl": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help",
+      "lastVerified": "2026-10-21"
+    },
+    "phoneNote": {
+      "en": "Office phone published in the official officers directory.",
+      "bn": "সরকারি কর্মকর্তাদের তালিকায় প্রকাশিত অফিসের ফোন নম্বর।"
+    },
+    "sourceUrl": "https://algiers.mofa.gov.bd/pages/officers-profile",
+    "contactLastReviewed": "2026-10-21",
+    "lastFetched": "2026-10-21T10:49:14.442174+00:00"
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Canberra",
@@ -25,21 +70,50 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People's Republic of Bangladesh, Sydney",
     "country": "Australia",
     "city": "Sydney",
     "location": "Australia (Sydney)",
-    "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "address": "Level 11, Suite 4, 99 York Street, Sydney, NSW 2000, Australia",
+    "phone": "+61283269777",
+    "email": "consular.sydney@mofa.gov.bd",
+    "website": "https://sydney.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": true,
+    "officers": [],
+    "countryEmergency": null,
+    "whatsapp": "+61480255628",
+    "sourceUrl": "https://sydney.mofa.gov.bd/pages/static-pages/contact-the-consulate-0ebvcp-69e1885491a6f56f1fa9850c",
+    "phoneSourceUrl": "https://protocol.dfat.gov.au/Public/Consulates/20/State/2",
+    "lastVerified": "2026-10-21",
+    "jurisdiction": {
+      "en": "New South Wales and Queensland",
+      "bn": "নিউ সাউথ ওয়েলস ও কুইন্সল্যান্ড"
+    },
+    "additionalEmails": [
+      {
+        "label": {
+          "en": "e-Passport",
+          "bn": "ই-পাসপোর্ট"
+        },
+        "email": "epassport.sydney@mofa.gov.bd"
+      },
+      {
+        "label": {
+          "en": "National ID (NID)",
+          "bn": "জাতীয় পরিচয়পত্র (এনআইডি)"
+        },
+        "email": "nid.sydney@mofa.gov.bd"
+      }
+    ],
+    "lastFetched": "2026-10-21T10:49:21.339335+00:00"
   },
   {
     "name": "Embassy & Permanent Mission of the People’s Republic of Bangladesh to the UN Offices and",
@@ -53,7 +127,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People's Republic of Bangladesh, Manama",
@@ -67,7 +143,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People's Republic of Bangladesh, Brussels",
@@ -81,7 +159,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People's Republic of Bangladesh, Thimphu, Bhutan",
@@ -95,7 +175,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Brasilia DF, Brazil",
@@ -109,7 +191,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission of the People's Republic of Bangladesh, Bandar Seri Begawan",
@@ -123,7 +207,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Ottawa",
@@ -137,7 +223,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People's Republic of Bangladesh, Toronto",
@@ -151,7 +239,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Beijing, China",
@@ -165,7 +255,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People’s Republic of Bangladesh, Hong Kong",
@@ -179,7 +271,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People’s Republic of Bangladesh, Kunming",
@@ -193,7 +287,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "The Embassy of the People’s Republic of Bangladesh, Copenhagen",
@@ -207,7 +303,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Cairo, Egypt",
@@ -221,7 +319,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Addis Ababa, Ethiopia",
@@ -235,7 +335,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Paris",
@@ -249,7 +351,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Berlin",
@@ -263,7 +367,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People's Republic of Bangladesh, Athens, Greece",
@@ -277,7 +383,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Bangladesh Assistant High Commission, Agartala",
@@ -291,7 +399,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Assistant High Commission of Bangladesh, Guwahati",
@@ -305,7 +415,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Deputy High Commission for the People's Republic of Bangladesh, Chennai, India",
@@ -319,7 +431,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Deputy High Commission for the People’s Republic of Bangladesh, Kolkata",
@@ -333,7 +447,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Deputy High Commission for the People's Republic of Bangladesh, Mumbai, India",
@@ -347,7 +463,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, New Delhi, India",
@@ -361,7 +479,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Jakarta",
@@ -375,7 +495,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Tehran",
@@ -389,7 +511,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the Peoples Republic of Bangladesh, Baghdad, Iraq",
@@ -403,7 +527,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People’s Republic of Bangladesh, Milan",
@@ -417,7 +543,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Rome",
@@ -431,7 +559,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Tokyo",
@@ -445,7 +575,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Amman, Jordan",
@@ -459,7 +591,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Nairobi, Kenya",
@@ -473,7 +607,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Seoul",
@@ -487,7 +623,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Kuwait",
@@ -501,7 +639,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Beirut, Lebanon",
@@ -515,7 +655,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Tripoli, Libya",
@@ -529,7 +671,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Kuala Lumpur",
@@ -543,7 +687,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Port Louis, Republic of Mauritius",
@@ -557,7 +703,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Mexico",
@@ -571,7 +719,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Rabat",
@@ -585,7 +735,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate of the People’s Republic of Bangladesh, Sittwe, Rakhine State, Myanmar",
@@ -599,7 +751,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Yangon, Myanmar",
@@ -613,7 +767,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Kathmandu",
@@ -627,7 +783,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Abuja, Nigeria",
@@ -641,7 +799,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Muscat",
@@ -655,7 +815,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Islamabad, Pakistan",
@@ -669,7 +831,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Bangladesh Deputy High Commission, Karachi, Pakistan",
@@ -683,7 +847,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People´s Republic of Bangladesh, Poland",
@@ -697,7 +863,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People´s Republic of Bangladesh, Lisbon, Portugal",
@@ -711,21 +879,38 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Doha, Qatar",
     "country": "Qatar",
     "city": "Doha",
     "location": "Qatar (Doha)",
-    "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "address": "Building 153, Street 820, Zone 43, New Al-Hilal, Doha, Qatar",
+    "phone": "+97444671927",
+    "email": "mission.doha@mofa.gov.bd",
+    "website": "https://doha.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": true,
+    "officers": [],
+    "countryEmergency": {
+      "numbers": {
+        "police": "999",
+        "ambulance": "999",
+        "fire": "999"
+      },
+      "sourceUrl": "https://portal.moi.gov.qa/UNCCPCJDoha/English/Emergency_Services.html",
+      "lastVerified": "2026-10-19"
+    },
+    "phoneNote": null,
+    "hotline": "+97433662000",
+    "sourceUrl": "https://doha.mofa.gov.bd/pages/static-pages/6952669135ce18e1c05aa177",
+    "lastVerified": "2026-10-19",
+    "lastFetched": "2026-10-21T10:49:28.481815+00:00"
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Ankara",
@@ -739,7 +924,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of Bangladesh, Istanbul",
@@ -753,7 +940,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People's Republic of Bangladesh, Bucharest",
@@ -767,7 +956,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People's Republic of Bangladesh, Moscow",
@@ -781,35 +972,164 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People's Republic of Bangladesh, Jeddah",
     "country": "Saudi Arabia",
     "city": "Jeddah",
     "location": "Saudi Arabia (Jeddah)",
-    "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "address": "",
+    "phone": "+966508636943",
+    "email": "consular.jeddah@mofa.gov.bd",
+    "website": "https://jeddah.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": true,
+    "officers": [
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "name": "Diplomatic Wing",
+        "designation": "",
+        "email": "",
+        "phone": null,
+        "phoneAsPublished": "",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-jeddah-mofa/2026/2/17c08ffd-ce60-4cc9-997a-15f24557d090.jpg",
+        "name": "Mr. Md. Shakhawat Hossain",
+        "designation": "Consul General",
+        "email": "",
+        "phone": null,
+        "phoneAsPublished": ""
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bdoot-jeddahcg-mofa/2024/12/14e4416739634374ac488043cff92c51.jpeg",
+        "name": "Mr. Md. Mehebub Zaman",
+        "designation": "Counsellor and Head of Chancery",
+        "email": "hoc.jeddah@mofa.gov.bd",
+        "phone": "+966126881740",
+        "phoneAsPublished": "+966126881740"
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-jeddah-mofa/2026/2/956b32e1-d977-42c2-9e6b-8dad434e0158.jpeg",
+        "name": "Mr. ASM Shayem",
+        "designation": "Counsellor (Consular)",
+        "email": "consular.jeddah@mofa.gov.bd",
+        "phone": "+966508636943",
+        "phoneAsPublished": "+966508636943"
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-jeddah-mofa/2026/7/052fd368-1c35-4064-8725-eb83d24c3e6e.jpg",
+        "name": "Mr. Md Nurul Alam",
+        "designation": "Third Secretary",
+        "email": "alammofa72@gmail.com",
+        "phone": "+966508225699",
+        "phoneAsPublished": "+966508225699"
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "name": "Commercial Wing",
+        "designation": "",
+        "email": "",
+        "phone": null,
+        "phoneAsPublished": "",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-bdoot-jeddahcg-mofa/2024/12/39fc2d91286d4d9a9e3b3ded49a8e1bf.jpg",
+        "name": "Syeda Nahida Habiba",
+        "designation": "Commercial Counsellor",
+        "email": "commerce.jeddah@mofa.gov.bd",
+        "phone": "+966531475523",
+        "phoneAsPublished": "+966531475523"
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "name": "Labor Welfare Wing",
+        "designation": "",
+        "email": "",
+        "phone": null,
+        "phoneAsPublished": "",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-jeddah-mofa/2026/2/808198c0-7942-4660-8103-c35c72ac1326.jpeg",
+        "name": "Mr. Khondakar Serajus Saleqin",
+        "designation": "Counsellor (Labor)",
+        "email": "counselorjeddah@probashi.gov.bd",
+        "phone": "+966501365198",
+        "phoneAsPublished": "+966501365198"
+      },
+      {
+        "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-jeddah-mofa/2026/1/9ff6052f-1003-4541-b82e-93d753636762.jpeg",
+        "name": "Mr. Md. Nazmul Hasan",
+        "designation": "First Secretary (Labor)",
+        "email": "fsjeddah@probashi.gov.bd",
+        "phone": "+966126335082",
+        "phoneAsPublished": "+966126335082"
+      }
+    ],
+    "countryEmergency": {
+      "numbers": {
+        "police": "999",
+        "ambulance": "997",
+        "fire": "998"
+      },
+      "sourceUrl": "https://my.gov.sa/en/emergency-contact",
+      "lastVerified": "2026-10-19"
+    },
+    "phoneNote": {
+      "bn": "সরকারি তালিকায় প্রকাশিত কনস্যুলার কর্মকর্তার যোগাযোগ নম্বর",
+      "en": "Consular officer contact published in the official directory"
+    },
+    "hotline": null,
+    "sourceUrl": "https://jeddah.mofa.gov.bd/pages/officers-profile",
+    "lastVerified": "2026-10-19",
+    "lastFetched": "2026-10-21T10:49:42.102506+00:00"
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Riyadh",
     "country": "Saudi Arabia",
     "city": "Riyadh",
     "location": "Saudi Arabia (Riyadh)",
-    "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "address": "8039 Dareen Street, Diplomatic Quarter, Riyadh, Saudi Arabia",
+    "phone": "0114195300",
+    "email": "mission.riyadh@mofa.gov.bd",
+    "website": "https://www.bangladeshembassy.org.sa/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": true,
+    "officers": [],
+    "countryEmergency": {
+      "numbers": {
+        "police": "999",
+        "ambulance": "997",
+        "fire": "998"
+      },
+      "sourceUrl": "https://my.gov.sa/en/emergency-contact",
+      "lastVerified": "2026-10-19"
+    },
+    "phoneNote": {
+      "bn": "সৌদি আরবের ভেতর থেকে কল করার নম্বর",
+      "en": "Local Saudi Arabia telephone number"
+    },
+    "hotline": null,
+    "sourceUrl": "https://www.bangladeshembassy.org.sa/contact.html",
+    "lastVerified": "2026-10-19",
+    "lastFetched": "2026-10-21T10:49:48.030698+00:00"
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Singapore",
@@ -823,7 +1143,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Pretoria",
@@ -837,7 +1159,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People's Republic of Bangladesh, Madrid",
@@ -851,7 +1175,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, Colombo",
@@ -865,7 +1191,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Stockholm",
@@ -879,7 +1207,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Permanent Mission of Bangladesh to the UN Office & other International Organizations in Geneva",
@@ -893,7 +1223,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Bangkok",
@@ -907,7 +1239,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Male, Republic of Maldives",
@@ -921,7 +1255,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, The Hague",
@@ -935,7 +1271,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Manila",
@@ -949,35 +1287,351 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Abu Dhabi, UAE",
     "country": "UAE",
     "city": "Abu Dhabi",
     "location": "UAE (Abu Dhabi)",
-    "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "address": "Villa 46 and 48, Sector 19, Zone W31, Al Jawwalah Street, Al Saadah Area, Abu Dhabi, UAE",
+    "phone": "+97124465100",
+    "email": "mission.abudhabi@mofa.gov.bd",
+    "website": "https://abudhabi.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": true,
+    "officers": [
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-abudhabi-mofa/2024/12/7a32c9c417994594852837266f019c91.jpeg",
+        "name": "H.E. Mr. Tareq Ahmed",
+        "designation": "Ambassador",
+        "email": "mission.abudhabi@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": ""
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Touhid Imam",
+        "designation": "Counsellor and Head of Chancery",
+        "email": "mission.abudhabi@mofa.gov.bd",
+        "phone": "+97124462945",
+        "phoneAsPublished": "+971 2 446 2945",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-abudhabi-mofa/2024/12/658f5b6874d049b5b24a0610a7db73c9.jpeg",
+        "name": "Mr. Mohammad Ullah Khan",
+        "designation": "Counsellor (Labour)",
+        "email": "counselorabudhabi@probashi.gov.bd",
+        "phone": "+97124462745",
+        "phoneAsPublished": "+971 2 446 2745"
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-abudhabi-mofa/2024/12/c07080057d7a4005b45dc9fe984cee2d.jpg",
+        "name": "Ms. Rubaiya Afroz",
+        "designation": "First Secretary (Passport & Visa)",
+        "email": "mission.abudhabi@moha.gov.bd",
+        "phone": "+97124439646",
+        "phoneAsPublished": "+971 2 443 9646"
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-abudhabi-mofa/2026/4/3af222d5-344b-4cae-b349-3f22acb60d0c.jpg",
+        "name": "Mr. Mohammad Ismail",
+        "designation": "First Secretary (Labour)",
+        "email": "fsabudhabi@probashi.gov.bd",
+        "phone": "+97124452216",
+        "phoneAsPublished": "+971 2 445 2216"
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-abudhabi-mofa/2026/7/66ad07c7-2f98-4cd4-a5a3-5a19d45ead27.jpeg",
+        "name": "Sheikh Kaushik Iqbal",
+        "designation": "First Secretary (Political)",
+        "email": "kaushik.iqbal@mofa.gov.bd",
+        "phone": "+97124474565",
+        "phoneAsPublished": "+971 2 447 4565"
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Mizanur Rahman, Administrative Officer (NID)",
+        "designation": "Mr. Mizanur Rahman, Administrative Officer (NID)",
+        "email": "+971 2 446 5100, Extension No. 103 & 403, nid.abudhabi@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 103 & 403, nid.abudhabi@mofa.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Abu Hasan Monju Administrative Officer (Consular)",
+        "designation": "Mr. Abu Hasan Monju Administrative Officer (Consular)",
+        "email": "+971 2 446 5100, Extension No. 223, mission.abudhabi@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 223, mission.abudhabi@mofa.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Dilip Kumar Sarkar Administrative Officer, (Accounts)",
+        "designation": "Mr. Dilip Kumar Sarkar Administrative Officer, (Accounts)",
+        "email": "+971 2 446 5100, Extension No. 406, mission.abudhabi@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 406, mission.abudhabi@mofa.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Md. Sohel Ahammed Personal Officer to H. E",
+        "designation": "Mr. Md. Sohel Ahammed Personal Officer to H. E",
+        "email": "+971 2 446 5100, Extension No. 305, mission.abudhabi@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 305, mission.abudhabi@mofa.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Ronju Ahammed, Administrative Officer (Administration)",
+        "designation": "Mr. Ronju Ahammed, Administrative Officer (Administration)",
+        "email": "+971 2 446 5100, Extension No. 304, mission.abudhabi@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 304, mission.abudhabi@mofa.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Md Abdul Wares, Administrative Officer (LWW)",
+        "designation": "Mr. Md Abdul Wares, Administrative Officer (LWW)",
+        "email": "+971 2 446 5100, Extension No. 311, labourwingauh@gmail.com",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 311, labourwingauh@gmail.com",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Md Jamal Mondol, Personal Officer to Counsellor",
+        "designation": "Mr. Md Jamal Mondol, Personal Officer to Counsellor",
+        "email": "+971 2 446 5100, Extension No. 312, labourwingauh@gmail.com",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 312, labourwingauh@gmail.com",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Shahinur Kamal, Steno-Typist",
+        "designation": "Mr. Shahinur Kamal, Steno-Typist",
+        "email": "+971 2 446 5100, Extension No. 234, labourwingauh@gmail.com +971 2 445 8182 (Direct)",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 234, labourwingauh@gmail.com +971 2 445 8182 (Direct)",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Md Abdul Khaleque, Administrative Officer (P&V)",
+        "designation": "Mr. Md Abdul Khaleque, Administrative Officer (P&V)",
+        "email": "+971 2 446 5100, Extension No. 204 & 212 fs.passportandvisa.abudhabi@ssd.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 204 & 212 fs.passportandvisa.abudhabi@ssd.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Md Saykat Sarker, Lower Division Assistant",
+        "designation": "Mr. Md Saykat Sarker, Lower Division Assistant",
+        "email": "+971 2 446 5100, Extension No. 123 & 203 fs.passportandvisa.abudhabi@ssd.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 123 & 203 fs.passportandvisa.abudhabi@ssd.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Haitham Mohd. Ahmed Daoud, Translator",
+        "designation": "Mr. Haitham Mohd. Ahmed Daoud, Translator",
+        "email": "+971 2 446 5100, Extension No. 326, mission.abudhabi@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 326, mission.abudhabi@mofa.gov.bd",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Md Naiem Mia, Public Relations Officer (PRO)",
+        "designation": "Mr. Md Naiem Mia, Public Relations Officer (PRO)",
+        "email": "+971 2 446 5100, Extension No. 306, pro.bdembassy@gmail.com",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 306, pro.bdembassy@gmail.com",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Mohammed Rezaul Alam, Legal Officer",
+        "designation": "Mr. Mohammed Rezaul Alam, Legal Officer",
+        "email": "+971 2 446 5100, Extension No. 331, labourwingauh@gmail.com",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 331, labourwingauh@gmail.com",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Mollah Osman Goni, Welfare Officer",
+        "designation": "Mr. Mollah Osman Goni, Welfare Officer",
+        "email": "+971 2 446 5100, Extension No. 209 labourwingauh@gmail.com +971 2 445 8182 (Direct)",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 209 labourwingauh@gmail.com +971 2 445 8182 (Direct)",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/6952669335ce18e1c05aa248",
+        "name": "Mr. Md Al Amin, Welfare Assistant",
+        "designation": "Mr. Md Al Amin, Welfare Assistant",
+        "email": "+971 2 446 5100, Extension No. 229 labourwingauh@gmail.com +971 2 445 8182 (Direct)",
+        "phone": null,
+        "phoneAsPublished": "+971 2 446 5100, Extension No. 229 labourwingauh@gmail.com +971 2 445 8182 (Direct)",
+        "imageUrl": null
+      }
+    ],
+    "countryEmergency": {
+      "numbers": {
+        "police": "999",
+        "ambulance": "998",
+        "fire": "997"
+      },
+      "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+      "lastVerified": "2026-10-19"
+    },
+    "phoneNote": null,
+    "hotline": null,
+    "sourceUrl": "https://abudhabi.mofa.gov.bd/pages/static-pages/contact-us-951808-6952668235ce18e1c05a9ab3",
+    "lastVerified": "2026-10-19",
+    "lastFetched": "2026-10-21T10:50:01.528866+00:00"
   },
   {
     "name": "Consulate General of the People's Republic of Bangladesh, Dubai, UAE",
     "country": "UAE",
     "city": "Dubai",
     "location": "UAE (Dubai)",
-    "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "address": "Villa 36 and 145, Abu Hail Road, Al Wuheida, Deira, Dubai, UAE",
+    "phone": "+97142388199",
+    "email": "mission.dubai@mofa.gov.bd",
+    "website": "https://dubai.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": true,
+    "officers": [
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-dubai-mofa/2026/8/953fa386-796b-4c48-b0f8-2cf114fe3f96.webp",
+        "name": "Md. Rashedujjaman",
+        "designation": "Consul General",
+        "email": "cg.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "0097142388199"
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Md Abdullah Al Mamunur Rashid",
+        "designation": "Second Secretary",
+        "email": "nidnsport.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "0097142388199",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Md Shajjad Zahir",
+        "designation": "Second Secretary",
+        "email": "protocol.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "00971-4-2388199",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Md Nazmul Hasan",
+        "designation": "Third Secretary",
+        "email": "consular.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "00971-4-2388199",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Tayyab Ahmed Anwar",
+        "designation": "",
+        "email": "",
+        "phone": null,
+        "phoneAsPublished": "",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Ashish Kumar Sarkar",
+        "designation": "Commercial Counsellor",
+        "email": "commerce.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "0097142388199",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Md Abdus Salam",
+        "designation": "Counsellor (Labour Welfare)",
+        "email": "labour.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "0097142388199",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Ms Shahanaz Parvin BPM PPM",
+        "designation": "First Secretary (Labour Welfare)",
+        "email": "labour.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "0097142388199",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Md Shahriar Alam",
+        "designation": "First Secretary",
+        "email": "ect.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "0097142388199",
+        "imageUrl": null
+      },
+      {
+        "sourceUrl": "https://dubai.mofa.gov.bd/pages/officers-profile",
+        "name": "Mr. Md Arifur Rahman",
+        "designation": "First Secretary (Press)",
+        "email": "press.dubai@mofa.gov.bd, CC: mission.dubai@mofa.gov.bd",
+        "phone": "0097142388199",
+        "phoneAsPublished": "0097142388199",
+        "imageUrl": null
+      }
+    ],
+    "countryEmergency": {
+      "numbers": {
+        "police": "999",
+        "ambulance": "998",
+        "fire": "997"
+      },
+      "sourceUrl": "https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies",
+      "lastVerified": "2026-10-19"
+    },
+    "phoneNote": {
+      "bn": "সাধারণ জিজ্ঞাসার জন্য অভ্যর্থনা নম্বর",
+      "en": "Reception number for general enquiries"
+    },
+    "hotline": null,
+    "sourceUrl": "https://dubai.mofa.gov.bd/pages/static-pages/6952669935ce18e1c05aa471",
+    "lastVerified": "2026-10-19",
+    "lastFetched": "2026-10-21T10:50:14.692290+00:00"
   },
   {
     "name": "Assistant High Commission for the People’s Republic of Bangladesh, Birmingham, United Kingdom",
@@ -991,7 +1645,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "High Commission for the People’s Republic of Bangladesh, London",
@@ -1005,7 +1661,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Assistant High Commission for the People’s Republic of Bangladesh, Manchester, UK",
@@ -1019,7 +1677,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People’s Republic of Bangladesh, Los Angeles",
@@ -1033,7 +1693,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People’s Republic of Bangladesh, Florida",
@@ -1047,7 +1709,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Consulate General of the People’s Republic of Bangladesh, New York",
@@ -1061,7 +1725,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Permanent Mission of Bangladesh to the United Nations, New York",
@@ -1075,7 +1741,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Washington, DC",
@@ -1089,7 +1757,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh to the Republic of Uzbekistan, Tashkent",
@@ -1103,7 +1773,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Embassy of the People’s Republic of Bangladesh, Hanoi",
@@ -1117,7 +1789,9 @@
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [],
+    "countryEmergency": null
   },
   {
     "name": "Bangladesh High Commission Wellington, New Zealand",
@@ -1125,13 +1799,69 @@
     "city": "Wellington",
     "location": "New Zealand (Wellington)",
     "address": null,
-    "phone": null,
-    "email": null,
-    "website": null,
+    "phone": "+642902051108",
+    "email": "mission.wellington@mofa.gov.bd",
+    "website": "https://wellington.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [
+      {
+        "sourceUrl": "https://wellington.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-wellington-mofa/2026/7/45a8a41a-5686-4427-86f8-50119c5dcee0.png",
+        "name": "Ms. Samina Naz",
+        "designation": "High Commissioner",
+        "email": "mission.wellington@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": "Vacant"
+      },
+      {
+        "sourceUrl": "https://wellington.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-wellington-mofa/2026/0/ee95caca-e9de-46a8-b8b9-1ba5a4517aa5.jpg",
+        "name": "Mr. Istiaque Uddin Ahmed",
+        "designation": "Counsellor",
+        "email": "istiaque.ahmed@mofa.gov.bd",
+        "phone": "+64225314441",
+        "phoneAsPublished": "+64 22 531 4441"
+      },
+      {
+        "sourceUrl": "https://wellington.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-wellington-mofa/2026/0/be8a0529-cd8c-44f4-8a3c-596b69e92ba3.jpg",
+        "name": "Ms. Sufia Khanam",
+        "designation": "Administrative Officer (Accounts)",
+        "email": "sofia.khanam@gmail.com",
+        "phone": "+642902665288",
+        "phoneAsPublished": "+64 290 266 5288"
+      },
+      {
+        "sourceUrl": "https://wellington.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-wellington-mofa/2026/0/24553167-6b27-46f7-b6d1-19251f6531e5.JPG",
+        "name": "Mr. Md. Jamal Uddin",
+        "designation": "Personal Officer",
+        "email": "jamalmofa2017@gmail.com",
+        "phone": "+642902051108",
+        "phoneAsPublished": "+64 290 205 1108"
+      }
+    ],
+    "countryEmergency": null,
+    "fieldSources": {
+      "phone": {
+        "urls": [
+          "https://wellington.mofa.gov.bd/",
+          "https://wellington.mofa.gov.bd/pages/static-pages/contact-information-syga3r-696da62dde1a12b0f127855d"
+        ],
+        "fetchedAt": "2026-10-21T10:50:30.021353+00:00"
+      },
+      "email": {
+        "urls": [
+          "https://wellington.mofa.gov.bd/",
+          "https://wellington.mofa.gov.bd/pages/static-pages/contact-information-syga3r-696da62dde1a12b0f127855d"
+        ],
+        "fetchedAt": "2026-10-21T10:50:30.021353+00:00"
+      }
+    },
+    "lastFetched": "2026-10-21T10:50:30.021353+00:00"
   },
   {
     "name": "Permanent Mission of Bangladesh to the Organisation of Islamic Cooperation (OIC), Jeddah",
@@ -1141,10 +1871,67 @@
     "address": null,
     "phone": null,
     "email": null,
-    "website": null,
+    "website": "https://oicpm.mofa.gov.bd/",
     "lat": null,
     "lon": null,
     "source": "https://mofa.gov.bd/pages/static-pages/6940329e35ce18e1c055f712",
-    "verified": false
+    "verified": false,
+    "officers": [
+      {
+        "sourceUrl": "https://oicpm.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-oicpm-mofa/2024/12/4c7c5ff623ec447cbf52754cc5230a86.jpeg",
+        "name": "H.E. MJH Jabed",
+        "designation": "Ambassador and Permanent Representative",
+        "email": "pr.oic@mofa.gov.bd",
+        "phone": null,
+        "phoneAsPublished": ""
+      },
+      {
+        "sourceUrl": "https://oicpm.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-oicpm-mofa/2026/3/2d42645e-35cf-4651-868a-3db166f8eb8e.jpg",
+        "name": "Mr. Mohammad Minto Khan",
+        "designation": "Third Secretary & HOC",
+        "email": "minto.mofa@gmail.com",
+        "phone": "+99560959479",
+        "phoneAsPublished": "+99560959479"
+      },
+      {
+        "sourceUrl": "https://oicpm.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-oicpm-mofa/2026/3/6392c99d-4e9b-4135-b735-2f88afc3e5d0.jpeg",
+        "name": "Mr. Arafat",
+        "designation": "Administrative Officer (Accounts)",
+        "email": "arafatmofa92@gmail.com",
+        "phone": "+99502153808",
+        "phoneAsPublished": "+99502153808"
+      },
+      {
+        "sourceUrl": "https://oicpm.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-oicpm-mofa/2026/3/71315c3d-17df-46b3-99e7-82d286de2f7d.jpeg",
+        "name": "Mr. Md Emdad Ullah",
+        "designation": "Interpreter",
+        "email": "emdad.pmbd.oic@gmail.com",
+        "phone": "+966551058994",
+        "phoneAsPublished": "+966551058994"
+      },
+      {
+        "sourceUrl": "https://oicpm.mofa.gov.bd/pages/officers-profile",
+        "imageUrl": "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-oicpm-mofa/2026/3/288af376-7d9b-49f3-85df-aebf800ab9ce.png",
+        "name": "Mr. Faisal Mallik",
+        "designation": "Protocol Assistant",
+        "email": "faisal.pmbd.oic@gmail.com",
+        "phone": "+966531980700",
+        "phoneAsPublished": "+966531980700"
+      }
+    ],
+    "countryEmergency": {
+      "numbers": {
+        "police": "999",
+        "ambulance": "997",
+        "fire": "998"
+      },
+      "sourceUrl": "https://my.gov.sa/en/emergency-contact",
+      "lastVerified": "2026-10-19"
+    },
+    "lastFetched": "2026-10-21T10:50:43.490458+00:00"
   }
 ]

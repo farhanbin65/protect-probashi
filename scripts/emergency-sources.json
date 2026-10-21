@@ -1,0 +1,302 @@
+[
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia/getting-help"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates/getting-help"
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "url": "https://www.gov.uk/foreign-travel-advice/qatar/getting-help"
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "url": "https://www.gov.uk/foreign-travel-advice/algeria/getting-help"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "url": "https://www.gov.uk/foreign-travel-advice/australia/getting-help"
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "url": "https://www.gov.uk/foreign-travel-advice/austria/getting-help"
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "url": "https://www.gov.uk/foreign-travel-advice/bahrain/getting-help"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "url": "https://www.gov.uk/foreign-travel-advice/belgium/getting-help"
+  },
+  {
+    "code": "BT",
+    "name": "Bhutan",
+    "url": "https://www.gov.uk/foreign-travel-advice/bhutan/getting-help"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "url": "https://www.gov.uk/foreign-travel-advice/brazil/getting-help"
+  },
+  {
+    "code": "BN",
+    "name": "Brunei",
+    "url": "https://www.gov.uk/foreign-travel-advice/brunei/getting-help"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "url": "https://www.gov.uk/foreign-travel-advice/canada/getting-help"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "url": "https://www.gov.uk/foreign-travel-advice/china/getting-help"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "url": "https://www.gov.uk/foreign-travel-advice/denmark/getting-help"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "url": "https://www.gov.uk/foreign-travel-advice/egypt/getting-help"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "url": "https://www.gov.uk/foreign-travel-advice/ethiopia/getting-help"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "url": "https://www.gov.uk/foreign-travel-advice/france/getting-help"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "url": "https://www.gov.uk/foreign-travel-advice/germany/getting-help"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "url": "https://www.gov.uk/foreign-travel-advice/greece/getting-help"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "url": "https://www.gov.uk/foreign-travel-advice/india/getting-help"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "url": "https://www.gov.uk/foreign-travel-advice/indonesia/getting-help"
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "url": "https://www.gov.uk/foreign-travel-advice/iran/getting-help"
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "url": "https://www.gov.uk/foreign-travel-advice/iraq/getting-help"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "url": "https://www.gov.uk/foreign-travel-advice/italy/getting-help"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "url": "https://www.gov.uk/foreign-travel-advice/japan/getting-help"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "url": "https://www.gov.uk/foreign-travel-advice/jordan/getting-help"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "url": "https://www.gov.uk/foreign-travel-advice/kenya/getting-help"
+  },
+  {
+    "code": "KR",
+    "name": "Korea",
+    "url": "https://www.gov.uk/foreign-travel-advice/south-korea/getting-help"
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "url": "https://www.gov.uk/foreign-travel-advice/kuwait/getting-help"
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "url": "https://www.gov.uk/foreign-travel-advice/lebanon/getting-help"
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "url": "https://www.gov.uk/foreign-travel-advice/libya/getting-help"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "url": "https://www.gov.uk/foreign-travel-advice/malaysia/getting-help"
+  },
+  {
+    "code": "MU",
+    "name": "Mauritius",
+    "url": "https://www.gov.uk/foreign-travel-advice/mauritius/getting-help"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "url": "https://www.gov.uk/foreign-travel-advice/mexico/getting-help"
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "url": "https://www.gov.uk/foreign-travel-advice/morocco/getting-help"
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar",
+    "url": "https://www.gov.uk/foreign-travel-advice/myanmar/getting-help"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "url": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "url": "https://www.gov.uk/foreign-travel-advice/nigeria/getting-help"
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "url": "https://www.gov.uk/foreign-travel-advice/oman/getting-help"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "url": "https://www.gov.uk/foreign-travel-advice/pakistan/getting-help"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "url": "https://www.gov.uk/foreign-travel-advice/poland/getting-help"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "url": "https://www.gov.uk/foreign-travel-advice/portugal/getting-help"
+  },
+  {
+    "code": "TR",
+    "name": "Turkey",
+    "url": "https://www.gov.uk/foreign-travel-advice/turkey/getting-help"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "url": "https://www.gov.uk/foreign-travel-advice/romania/getting-help"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "url": "https://www.gov.uk/foreign-travel-advice/russia/getting-help"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "url": "https://www.gov.uk/foreign-travel-advice/singapore/getting-help"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "url": "https://www.gov.uk/foreign-travel-advice/south-africa/getting-help"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "url": "https://www.gov.uk/foreign-travel-advice/spain/getting-help"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka/getting-help"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "url": "https://www.gov.uk/foreign-travel-advice/sweden/getting-help"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "url": "https://www.gov.uk/foreign-travel-advice/switzerland/getting-help"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "url": "https://www.gov.uk/foreign-travel-advice/thailand/getting-help"
+  },
+  {
+    "code": "MV",
+    "name": "Maldives",
+    "url": "https://www.gov.uk/foreign-travel-advice/maldives/getting-help"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "url": "https://www.gov.uk/foreign-travel-advice/netherlands/getting-help"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "url": "https://www.gov.uk/foreign-travel-advice/philippines/getting-help"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "url": "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers"
+  },
+  {
+    "code": "US",
+    "name": "USA",
+    "url": "https://www.gov.uk/foreign-travel-advice/usa/getting-help"
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan/getting-help"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "url": "https://www.gov.uk/foreign-travel-advice/vietnam/getting-help"
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "url": "https://www.gov.uk/foreign-travel-advice/new-zealand/getting-help"
+  }
+]

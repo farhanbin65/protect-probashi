@@ -2,7 +2,7 @@ import {
   useState
 } from "react";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import {
   MapPin,
@@ -29,6 +29,8 @@ export default function Location() {
   } = useCountry();
 
   const navigate = useNavigate();
+  const [params] = useSearchParams();
+  const returnTo = ["/emergency", "/embassy", "/rights", "/news", "/about"].includes(params.get("returnTo")) ? params.get("returnTo") : "/";
 
   const [selectedCountry, setSelectedCountry] =
     useState(countryCode || "");
@@ -53,7 +55,7 @@ export default function Location() {
     }
 
     setLocation(selectedCountry, selectedCity || null);
-    navigate("/");
+    navigate(returnTo, { replace: true });
   }
 
   return (

@@ -49,7 +49,7 @@ test("full directory includes every imported office with unique IDs and verified
   const { default: allCountries } = await import("../src/utils/directoryCountries.js");
   const result = mergeMissions(verified, imported, allCountries);
   assert.equal(result.length, 82);
-  assert.equal(allCountries.length, 60);
+  assert.equal(allCountries.length, 67);
   assert.equal(new Set(result.map((item) => item.id)).size, result.length);
   assert.deepEqual(result.slice(0, 5), verified);
   assert.ok(result.some((item) => item.countryCode === "GB" && item.type === "highCommission"));
