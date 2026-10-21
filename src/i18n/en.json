@@ -104,7 +104,6 @@
   "privacyText": "No account is required. Your language, country and a cached copy of exchange rates are stored on this device. News images and currency rates are loaded from external providers, which receive normal web requests.",
   "report": "Report incorrect information",
   "reportText": "Found incorrect information? Send us a report.",
-  "reportUnavailable": "Reporting contact has not been configured.",
   "back": "Back",
   "notFound": "Page not found",
   "notFoundText": "This page is unavailable.",
@@ -142,5 +141,9 @@
   "sourceRetrieved": "Source retrieved",
   "worldClock": "Clock & weather",
   "worldClockIntro": "Compare time with Dhaka and check your city’s weather.",
-  "newsFeedUnavailable": "Live feeds are unavailable. Showing saved news."
+  "newsFeedUnavailable": "Live feeds are unavailable. Showing saved news.",
+  "contact": "Contact",
+  "placesTitle": "Places I’ve Visited in Bangladesh",
+  "placesNav": "My Bangladesh travels",
+  "placesIntro": "Keep a little piece of home. Mark the districts you’ve visited across all 8 divisions of Bangladesh."
 }

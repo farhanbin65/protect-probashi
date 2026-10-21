@@ -45,6 +45,7 @@ export default function Home() {
 
   const [search, setSearch] = useState("");
   const services = [
+    { to: "/places", key: "placesNav", description: "placesIntro", icon: MapPin, color: "purple" },
     { to: "/world-clock", key: "worldClock", description: "worldClockIntro", icon: Clock, color: "amber" },
     { to: "/embassy", key: "embassy", description: "embassyIntro", icon: Landmark, color: "green" },
     { to: "/rights", key: "rights", description: "rightsIntro", icon: Scale, color: "blue" },

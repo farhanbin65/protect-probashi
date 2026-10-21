@@ -62,14 +62,12 @@ export default function About() {
         <div className="item-heading">
           <Mail size={26} aria-hidden="true" />
 
-          <h2>{t("report")}</h2>
+          <h2>{t("contact")}</h2>
         </div>
 
         <p>{t("reportText")}</p>
 
-        <p className="muted">
-          {t("reportUnavailable")}
-        </p>
+        <p><a href="mailto:hello@farhanbin.dev">hello@farhanbin.dev</a></p>
       </section>
     </div>
   );

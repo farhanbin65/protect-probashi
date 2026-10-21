@@ -26,6 +26,7 @@ const Rights = lazy(() => import("./pages/Rights"));
 const RightsDetail = lazy(() => import("./pages/RightsDetail"));
 const News = lazy(() => import("./pages/News"));
 const NewsDetail = lazy(() => import("./pages/NewsDetail"));
+const Places = lazy(() => import("./pages/Places"));
 const About = lazy(() => import("./pages/About"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -54,6 +55,7 @@ function Layout() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/places" element={<Places />} />
             <Route path="/world-clock" element={<WorldClockPage />} />
 
             <Route
@@ -108,6 +110,7 @@ function Layout() {
           {t("about")}
         </Link>
 
+        <Link to="/places">{t("placesNav")}</Link>
         <span>PP</span>
       </footer>
     </div>
