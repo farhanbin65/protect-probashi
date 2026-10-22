@@ -1,5 +1,4 @@
 import { useState } from "react";
-import missionsData from "../data/bd_missions.json" with { type: "json" };
 import {
   Landmark,
   MapPin,
@@ -15,17 +14,10 @@ import {
 import { useT } from "../hooks/useT";
 import { useCountry } from "../hooks/useCountry";
 
-import details from "../data/mission_details.json";
-import embassies from "../data/embassies.json";
 import countries from "../utils/directoryCountries";
-import { mergeMissions } from "../utils/missions";
+import embassyDirectory from "../utils/embassyDirectory";
 
-const embassyDirectory = mergeMissions(embassies, missionsData, countries).map((mission) => {
-  const extra = details.find((item) => item.id === mission.id);
-  if (!extra) return mission;
-  // Reviewed additions fill gaps; curated contact values always win.
-  return { ...extra, ...Object.fromEntries(Object.entries(mission).filter(([, value]) => value != null && value !== "")), officers: extra.officers || mission.officers || [] };
-});
+
 
 import {
   localized,

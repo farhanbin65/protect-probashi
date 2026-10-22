@@ -5558,7 +5558,7 @@
     "country": "United Kingdom",
     "city": "Birmingham",
     "location": "United Kingdom (Birmingham)",
-    "address": null,
+    "address": "The Southside Building (4th Floor), 31 Hurst Street, Birmingham B5 4BD, United Kingdom",
     "phone": "01216223650",
     "email": "consular.birmingham@mofa.gov.bd",
     "website": "https://birmingham.mofa.gov.bd/",
@@ -5586,6 +5586,15 @@
           "https://birmingham.mofa.gov.bd/pages/static-pages/6952668535ce18e1c05a9c61"
         ],
         "fetchedAt": "2026-10-21T20:49:18.105057+00:00"
+      },
+      "address": {
+        "urls": [
+          "https://assets.publishing.service.gov.uk/media/6abe2e1c943e890cb55e5dc7/CONSULATES_OUTSIDE_LONDON_-_OCTOBER_2026.odt"
+        ],
+        "fetchedAt": "2026-10-22T10:27:52.264644+00:00",
+        "verified": false,
+        "sourceType": "hostProtocol",
+        "reviewMethod": "Exact office entry in UK regional consular list"
       }
     },
     "lastFetched": "2026-10-21T21:10:00+00:00",
@@ -5648,7 +5657,7 @@
     "country": "United Kingdom",
     "city": "Manchester",
     "location": "United Kingdom (Manchester)",
-    "address": null,
+    "address": "Seamark House, Edge Lane, Droylsden, Manchester M43 6BB, United Kingdom",
     "phone": "+441618430380",
     "email": "mission.manchester@mofa.gov.bd",
     "website": "https://manchester.mofa.gov.bd/",
@@ -5695,6 +5704,15 @@
           "https://manchester.mofa.gov.bd/pages/static-pages/6952669935ce18e1c05aa427"
         ],
         "fetchedAt": "2026-10-21T21:10:00+00:00"
+      },
+      "address": {
+        "urls": [
+          "https://assets.publishing.service.gov.uk/media/6abe2e1c943e890cb55e5dc7/CONSULATES_OUTSIDE_LONDON_-_OCTOBER_2026.odt"
+        ],
+        "fetchedAt": "2026-10-22T10:27:52.264814+00:00",
+        "verified": false,
+        "sourceType": "hostProtocol",
+        "reviewMethod": "Exact office entry in UK regional consular list"
       }
     },
     "lastFetched": "2026-10-21T21:10:00+00:00"

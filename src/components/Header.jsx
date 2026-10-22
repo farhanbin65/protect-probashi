@@ -4,7 +4,6 @@ import {
 } from "react-router-dom";
 
 import {
-  ShieldCheck,
   Home,
   ShieldAlert,
   Landmark,
@@ -63,11 +62,7 @@ export default function Header() {
           aria-label={t("home")}
         >
           <span className="brand-icon">
-            <ShieldCheck
-              size={28}
-              strokeWidth={2}
-              aria-hidden="true"
-            />
+            <img src="/logo.png" width="42" height="42" alt="" aria-hidden="true" />
           </span>
 
           <span className="brand-text">

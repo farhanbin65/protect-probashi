@@ -12,7 +12,7 @@ import {
 import { useT } from "../hooks/useT";
 import { useCountry } from "../hooks/useCountry";
 
-import embassies from "../data/embassies.json";
+import embassies from "../data/embassies.json" with { type: "json" };
 
 import {
   formatDate,

@@ -34,3 +34,20 @@ class ProtocolTests(unittest.TestCase):
         self.assertEqual(fields['phone'], '+442075840081')
         self.assertEqual(fields['email'], 'mission.london@mofa.gov.bd')
         self.assertIn('SW7 5JA', fields['address'])
+
+    def test_us_skip_and_regional_review_make_no_requests(self):
+        class Fetch:
+            def __init__(self):
+                self.calls = []
+            def get(self, url):
+                self.calls.append(url)
+                raise AssertionError('Deferred sources must not be fetched')
+        fetch = Fetch()
+        rows = [{'country': 'USA', 'city': 'Washington'}, {'country': 'United Kingdom', 'city': 'Birmingham'}]
+        report = crosscheck(rows, range(len(rows)), fetch, 'now')
+        self.assertEqual(fetch.calls, [])
+        us = next(x for x in report if x['country'] == 'USA')
+        self.assertEqual(us['status'], 'skipped')
+        self.assertFalse(us['automaticRetry'])
+        uk = next(x for x in report if x['country'] == 'United Kingdom')
+        self.assertEqual(uk['manualReview'][0]['city'], 'Birmingham')

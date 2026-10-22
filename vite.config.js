@@ -17,7 +17,7 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
 
-      includeAssets: ["icon.svg"],
+      includeAssets: ["logo.png"],
 
       manifest: {
         id: "/",
@@ -37,9 +37,9 @@ export default defineConfig({
 
         icons: [
           {
-            src: "/icon.svg",
-            sizes: "any",
-            type: "image/svg+xml",
+            src: "/logo.png",
+            sizes: "1254x1254",
+            type: "image/png",
             purpose: "any"
           }
         ]

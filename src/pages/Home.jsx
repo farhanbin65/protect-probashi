@@ -27,6 +27,7 @@ import {
   formatDate
 } from "../utils/content";
 
+import DirectoryStats from "../components/DirectoryStats";
 import CurrencyRates from "../components/CurrencyRates";
 import NewsImage from "../components/NewsImage";
 
@@ -105,7 +106,7 @@ export default function Home() {
             <ChevronRight size={15} aria-hidden="true" />
           </Link>
         </div>
-        <div className="hero-art" aria-hidden="true"><Globe2 size={100} strokeWidth={0.8} /><span><ShieldAlert size={27} /></span></div>
+        <div className="hero-art hero-brand-art" aria-hidden="true"><img src="/logo.png" width="120" height="120" alt="" /></div>
       </section>
 
       <div className="home-search">
@@ -152,6 +153,7 @@ export default function Home() {
         </section>
       </div>
 
+      <DirectoryStats />
       <CurrencyRates />
       <section className="home-offline">
         <span className="action-icon green"><Download size={24} aria-hidden="true" /></span>

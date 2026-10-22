@@ -138,3 +138,12 @@ python scripts/protocol_sources.py --system-trust --apply
 
 Protocol collection is not automatic two-source verification. Matching or
 conflicting sources are recorded without changing `lastVerified`.
+
+The optional US host-country check is deliberately skipped after the known 403;
+reports mark it `needs external verification: skipped (403)` with automatic
+retry disabled. Mission-site collection continues normally.
+
+Birmingham and Manchester addresses were checked against the October 2026 UK
+regional consular list. Any remaining missing contacts are listed in
+`MANUAL_REVIEW_QUEUE` for office-specific review, with automatic protocol retries
+disabled. The queue does not assert that the offices lack dedicated websites.

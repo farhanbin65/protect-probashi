@@ -11,6 +11,14 @@ HOST_PROTOCOL_DIRECTORIES = {
 }
 
 
+MANUAL_REVIEW_QUEUE = [
+    {'country': 'United Kingdom', 'city': city, 'automaticRetry': False,
+     'reason': 'Regional address checked in UK consular list; remaining contact gaps require office-specific review of mission pages or London circulars.',
+     'addressSource': 'https://assets.publishing.service.gov.uk/media/6abe2e1c943e890cb55e5dc7/CONSULATES_OUTSIDE_LONDON_-_OCTOBER_2026.odt'}
+    for city in ('Birmingham', 'Manchester')
+]
+
+
 def scoped_fields(html, country, city):
     soup = BeautifulSoup(html, 'html.parser')
     root = soup.find('main') or soup
@@ -81,6 +89,17 @@ def crosscheck(records, selected, fetch, fetched):
             continue
         entry = {'country': country, 'sourceUrl': url, 'missions': [], 'fetchedAt': fetched}
         report.append(entry)
+        if country == 'USA':
+            entry.update(status='skipped', reason='needs external verification: skipped (403)', automaticRetry=False)
+            entry['missions'] = [{'city': records[i]['city'], 'status': 'needs external verification', 'primarySource': records[i].get('website')} for i in targets]
+            continue
+        deferred = [item for item in MANUAL_REVIEW_QUEUE if item['country'] == country and any(records[i]['city'] == item['city'] for i in targets)]
+        if deferred:
+            entry['manualReview'] = deferred
+            targets = [i for i in targets if not any(records[i]['city'] == item['city'] for item in deferred)]
+            if not targets:
+                entry['status'] = 'manual review; automatic retry disabled'
+                continue
         try:
             html, final_url = fetch.get(url)
             entry['sourceUrl'] = final_url
