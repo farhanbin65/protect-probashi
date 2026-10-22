@@ -9,6 +9,7 @@ import "@fontsource-variable/inter";
 import "@fontsource-variable/noto-sans-bengali";
 
 import App from "./App.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./styles.css";
 import "./desktop.css";
@@ -24,6 +25,7 @@ ReactDOM.createRoot(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <Analytics />
     </BrowserRouter>
   </React.StrictMode>
 );
